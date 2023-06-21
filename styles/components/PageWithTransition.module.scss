@@ -1,0 +1,52 @@
+@import '../variables/variables.color.module';
+@import '../variables/variables.easing.module';
+@import '../variables/variables.breakpoints.module';
+@import '../variables/variables.spacing.module';
+
+@mixin container($multiply: 2) {
+  position: relative;
+  height: calc(100vh - ($padding-md-1 * $multiply));
+  width: calc(100vw - ($padding-md-1 * $multiply));
+  padding: $padding-md-1;
+  margin: $margin-md-1;
+  animation: 9s ease infinite gradient;
+  background: linear-gradient(45deg, #35394d, #4f838c, #5ab3b5, #9dc4a5);
+  background-size: 200% 200%;
+  color: var(--color-text-primary);
+  font-family: 'Raleway', sans-serif;
+  overflow-y: scroll;
+  transition: color var(--timing-forefront) $easeInOut, background-color var(--timing-forefront) $easeInOut;
+
+  @media #{$smUp} {
+    height: calc(100vh - ($padding-lg * $multiply));
+    width: calc(100vw - ($padding-lg * $multiply));
+    margin: $margin-lg;
+    padding: $padding-lg;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-page-enter {
+  @include container;
+  // background-color: var(--color-background);
+  // background-image: none;
+  opacity: 1;
+  transition: opacity var(--timing-background) $easeInOut;
+}
+
+.animate-page-exit {
+  @include container(4);
+  opacity: 0;
+  transition: opacity var(--timing-background) $easeInOut;
+}

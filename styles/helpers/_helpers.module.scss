@@ -1,0 +1,42 @@
+@import '../variables/variables.breakpoints.module';
+@import '../variables/variables.color.module';
+@import '../variables/variables.easing.module';
+@import '../variables/_variables.spacing.module';
+@import '../mixins/_mixins.font.module';
+@import '../mixins/mixins.links.module';
+
+.block {
+  display: block;
+}
+
+.container {
+  // height: 100%;
+  width: 100%;
+  @media #{mdUp} {
+    width: 50vw;
+  }
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.title-xs {
+  @include heading('xs');
+}
+
+.title-sm {
+  @include heading('sm');
+}
+
+.title-md {
+  @include heading('md');
+}

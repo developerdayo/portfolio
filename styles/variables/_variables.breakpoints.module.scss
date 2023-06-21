@@ -1,0 +1,35 @@
+@import '../functions/functions.ranges';
+
+$xs: 480px !default;
+$sm: 768px !default;
+$md: 980px !default;
+$lg: 1200px !default;
+
+$xsRange: (0, $xs) !default;
+$smRange: ($sm + 1, $sm) !default;
+$mdRange: ($md + 1, $md - 1) !default;
+$lgRange: ($lg + 1, $lg - 1) !default;
+$xlgRange: ($lg, 999999) !default;
+
+$screen: 'only screen' !default;
+
+$xsUp: $screen !default;
+$xsOnly: "#{$screen} and (max-width: #{upper-bound($xsRange)})" !default;
+
+$smUp: "#{$screen} and (min-width: #{lower-bound($smRange)})" !default;
+$smOnly: "#{$screen} and (min-width: #{lower-bound($smRange)}) and (max-width: #{upper-bound($smRange)})" !default;
+
+$mdUp: "#{$screen} and (min-width: #{lower-bound($mdRange)})" !default;
+$mdOnly: "#{$screen} and (min-width: #{lower-bound($mdRange)}) and (max-width: #{upper-bound($mdRange)})" !default;
+
+$lgUp: "#{$screen} and (min-width: #{lower-bound($lgRange)})" !default;
+$lgOnly: "#{$screen} and (min-width: #{lower-bound($lgRange)}) and (max-width: #{upper-bound($lgRange)})" !default;
+
+$xlgUp: "#{$screen} and (min-width: #{lower-bound($xlgRange)})" !default;
+
+:export {
+  xs: $xs;
+  sm: $sm;
+  md: $md;
+  lg: $lg;
+}

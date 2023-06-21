@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap');
+@import '../variables/variables.spacing.module';
+
+$html-font-size: 16px;
+
+@function stripUnit($value) {
+    @return $value / ($value * 0 + 1);
+}
+@function rem($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit(16px)}rem;
+}
+
+// fonts
+@mixin font($weight: rg) {
+  font-family: 'Raleway', sans-serif;
+  @if ($weight == lt) {
+    font-weight: 100;    
+  }
+  @if ($weight == rg) {
+    font-weight: 400;    
+  }
+  @if ($weight == md) {
+    font-weight: 500;    
+  }
+  @if ($weight == b) {
+    font-weight: 700;    
+  }
+}
+
+@mixin font-10 {
+  font-size: rem(10px);
+  line-height: rem(22px);
+}
+
+@mixin font-14 {
+  font-size: rem(14px);
+  line-height: rem(28px);
+}
+
+@mixin font-16 {
+  font-size: rem(16px);
+  line-height: rem(26px);
+}
+
+@mixin font-18 {
+  font-size: rem(18px);
+  line-height: rem(26px);
+}
+
+@mixin font-20 {
+  font-size: rem(20px);
+  line-height: rem(28px);
+}
+
+// in cta aside, see the 24/26 pairing but in heading definitions, we see 24/32 pairing.
+@mixin font-24 {
+  font-size: rem(24px);
+  line-height: rem(32px);
+}
+
+@mixin font-26 {
+  font-size: rem(26px);
+  line-height: rem(34px);
+}
+
+@mixin font-30 {
+  font-size: rem(30px);
+  line-height: rem(35px);
+}
+
+@mixin font-40 {
+  font-size: rem(40px);
+  line-height: rem(50px);
+}
+
+@mixin font-50 {
+  font-size: rem(50px);
+  line-height: rem(50px);
+}
+
+// heading sizes
+@mixin heading($size: md) {
+  @if ($size == xxs) {
+    @include font(md);
+    @include font-18;
+    font-weight: 600;
+  }
+  @if ($size == xs) {
+    @include font(b);
+    @include font-20;
+    margin-bottom: $margin-xxs;
+  }
+  @if ($size == sm) {
+    @include font(b);
+    @include font-24; 
+  }
+  @if ($size == md) {
+    @include font(b);
+    @include font-30;
+  }
+  @if ($size == lg) {
+    @include font(b);
+    @include font-40;
+  }
+  @if ($size == xl) {
+    @include font(b);
+    @include font-50;
+  }
+}
+
+// paragraph sizes
+@mixin paragraph($size: md) {
+  @if ($size == xxxs) {
+    @include font(md);
+    @include font-10;
+  }
+  @if ($size == xxs) {
+    @include font(rg);
+    @include font-14;
+  }
+  @if ($size == xs) {
+    @include font(rg);
+    @include font-16;
+  }
+  @if ($size == md) {
+    @include font(rg);
+    @include font-18;
+  }
+}

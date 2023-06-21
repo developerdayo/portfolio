@@ -1,0 +1,33 @@
+$sp-6: 50px;
+$sp-0: 30px;
+$sp-1: 25px;
+$sp-2: 20px;
+$sp-3: 15px;
+$sp-4: 10px;
+$sp-5: 5px;
+
+$padding-lg: $sp-6;
+$padding-md: $sp-0;
+$padding-md-1: $sp-1;
+$padding-sm: $sp-2;
+
+$margin-lg: $sp-6;
+$margin-md: $sp-0;
+$margin-md-1: $sp-1;
+$margin-sm: $sp-3;
+$margin-xs: $sp-4;
+$margin-xxs: $sp-5;
+
+:export {
+  sp-0: $sp-0;
+  sp-1: $sp-1;
+  sp-2: $sp-2;
+
+  padding-lg: $padding-lg;
+  padding-md: $padding-md;
+  padding-md-1: $padding-md-1;
+  padding-sm: $padding-sm;
+
+  margin-lg: $margin-lg;
+  margin-md-1: $margin-md-1;
+}

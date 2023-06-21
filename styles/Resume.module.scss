@@ -1,0 +1,23 @@
+@import '../styles/variables/variables.color.module';
+@import '../styles/variables/variables.spacing.module';
+@import '../styles/mixins/mixins.font.module';
+
+.column-25 {
+  width: 25%;
+}
+
+.column-75 {
+  width: 75%;
+}
+
+.divide {
+  padding-bottom: $padding-lg;
+  margin-bottom: $margin-lg;
+  border-bottom: .5px solid var(--color-hr);
+}
+
+.flex {
+  padding-bottom: $padding-lg;
+  display: flex;
+  gap: 40px;
+}
