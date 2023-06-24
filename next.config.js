@@ -17,5 +17,9 @@ module.exports = {
   output: 'export',
   eslint: {
     dirs: ['pages', 'utils'],
+  },
+  images: {
+    loader: 'imgix',
+    path: ''
   }
 }
