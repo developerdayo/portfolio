@@ -14,6 +14,7 @@ if (isGithubActions) {
 module.exports = {
   assetPrefix: assetPrefix,
   basePath: basePath,
+  output: 'export',
   eslint: {
     dirs: ['pages', 'utils'],
   },
