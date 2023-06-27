@@ -20,5 +20,5 @@ module.exports = {
   images: {
     loader: 'imgix',
     path: 'https://developdayo.imgix.net'
-  }
+  },
 }
