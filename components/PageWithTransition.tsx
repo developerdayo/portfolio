@@ -8,6 +8,7 @@ import transitions from '../styles/components/PageWithTransition.module.scss';
 const PageWithTransition = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
   const prevScreen = useRef(Component);
+  const container = useRef<HTMLDivElement>(null);
   const [transitioning, setTransitioning] = useState(false);
 
   useEffect(() => {
@@ -16,6 +17,7 @@ const PageWithTransition = ({ Component, pageProps }: AppProps) => {
       setTimeout(() => {
         prevScreen.current = Component;
         setTransitioning(false);
+        container.current?.scrollTo(0, 0);
       }, 280);
     };
 
@@ -30,7 +32,7 @@ const PageWithTransition = ({ Component, pageProps }: AppProps) => {
   const Screen = !transitioning ? Component : Loading;
 
   return (
-    <div className={!transitioning ? `${transitions['animate-page-enter']}` : `${transitions['animate-page-exit']}`}>
+    <div ref={container} className={!transitioning ? `${transitions['animate-page-enter']}` : `${transitions['animate-page-exit']}`}>
       <Screen {...pageProps} />
     </div>
   );

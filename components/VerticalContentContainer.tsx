@@ -8,10 +8,10 @@ type Props = {
   size: string;
 }
 
-const VerticalContentContainer = ({ altText, children, backgroundImage, size }: Props) => {
+const VerticalContentContainer = ({ altText, backgroundImage, children, size }: Props) => {
   return (
     <div className={styles['container']}>
-      {backgroundImage !== '' ? <img className={styles['background-image']} src={backgroundImage} alt={altText} /> : <></>}
+      {backgroundImage ? <img className={styles['background-image']} src={backgroundImage} alt={altText} /> : <></>}
       <div className={`${styles.content} ${styles[size]}`}>
         {children}
       </div>

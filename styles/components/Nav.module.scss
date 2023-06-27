@@ -1,13 +1,13 @@
 // variables
-@import 'variables/variables.easing.module';
-@import '../styles/variables/variables.breakpoints.module';
-@import 'variables/variables.color.module';
-@import 'variables/variables.spacing.module';
+@import '../variables/variables.easing.module';
+@import '../variables/variables.breakpoints.module';
+@import '../variables/variables.color.module';
+@import '../variables/variables.spacing.module';
 
 // mixins
-@import '../styles/mixins/_mixins.font.module.scss';
-@import '../styles/mixins/mixins.icons.module';
-@import '../styles/mixins/mixins.links.module';
+@import '../mixins/_mixins.font.module.scss';
+@import '../mixins/mixins.icons.module';
+@import '../mixins/mixins.links.module';
 
 .box {
   position: relative;
@@ -159,26 +159,49 @@
   }
 }
 
-.pseudo-bg::before {
-  position: fixed;
-  right: calc($margin-md + $padding-md - ($padding-md / 2));
-  bottom: calc($margin-md + $padding-md - ($padding-md / 2) - 15px);
-  height: 150px;
-  width: 150px;
-  background-color: rgb(53, 57, 77, .65);
-  border-radius: 100%;
-  content: '';
+.pseudo-bg {
+  &:hover::before {
+    background-color: rgb(53, 57, 77, .85);
+  }
 
-  @media #{$smUp} {
-    right: calc(($margin-lg + $padding-lg) - ($padding-lg / 2));
-    bottom: calc(($margin-lg + $padding-lg) - ($padding-lg / 2) - 10px);
+  &::before {
+    position: fixed;
+    right: calc($margin-md + $padding-md - ($padding-md / 2));
+    bottom: calc($margin-md + $padding-md - ($padding-md / 2) - 15px);
+    height: 150px;
+    width: 150px;
+    background-color: rgb(53, 57, 77, .65);
+    border-radius: 100%;
+    content: '';
+    transition: background-color var(--timing-background) $easeInOut;
+  
+    @media #{$smUp} {
+      right: calc(($margin-lg + $padding-lg) - ($padding-lg / 2));
+      bottom: calc(($margin-lg + $padding-lg) - ($padding-lg / 2) - 10px);
+    }
   }
 }
 
 .title {
-  @include font-30();
-  @include font('md');
-  margin-bottom: 5px;
+  position: relative;
+  height: 35px;
+
+  a  {
+    @include font-30();
+    @include font('md');
+    position: absolute;
+    top: 0;
+    transition: top var(--timing-background) $easeInOut;
+  
+    &:hover {
+      top: -5px;
+      animation: none;
+    }
+  
+    &::before, &::after {
+      content: none;
+    }
+  }
 }
 
 @keyframes light-dark-mode-button {

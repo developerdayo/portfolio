@@ -86,7 +86,7 @@ $html-font-size: 16px;
     font-weight: 600;
   }
   @if ($size == xs) {
-    @include font(b);
+    @include font(md);
     @include font-20;
     margin-bottom: $margin-xxs;
   }

@@ -1,13 +1,26 @@
+@import '../styles/variables/variables.breakpoints.module';
 @import '../styles/variables/variables.color.module';
 @import '../styles/variables/variables.spacing.module';
 @import '../styles/mixins/mixins.font.module';
 
-.column-25 {
-  width: 25%;
+.xs-50 {
+  width: 50%;
 }
 
-.column-75 {
-  width: 75%;
+.xs-100 {
+  width: 100%;
+}
+
+.sm-25 {
+  @media #{$smUp} {
+    width: 25%;
+  }
+}
+
+.sm-75 {
+  @media #{$smUp} {
+    width: 75%;
+  }
 }
 
 .divide {
@@ -19,5 +32,9 @@
 .flex {
   padding-bottom: $padding-lg;
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+
+  @media #{$smUp} {
+    flex-wrap: nowrap;
+  }
 }
