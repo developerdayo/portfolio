@@ -3,9 +3,6 @@ import Global from './Layout';
 import Nav from '../components/Nav';
 import VerticalContentContainer from '../components/VerticalContentContainer';
 
-// images
-import portraitPic from '../public/me.jpg';
-
 // styles
 import helpers from '../styles/helpers/_helpers.module.scss';
 import global from '../styles/helpers/_helpers.global-font-styles.module.scss';
@@ -19,7 +16,7 @@ export default function firstChallenge() {
             <Nav>
               <VerticalContentContainer
                 altText="Portrait of me seated in front of my computer in my old company office, laughing shyly"
-                backgroundImage={portraitPic}
+                backgroundImage='me.JPG'
                 size='small'
               >
                 <>
