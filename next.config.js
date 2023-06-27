@@ -20,6 +20,6 @@ module.exports = {
   },
   images: {
     loader: 'imgix',
-    path: ''
+    path: 'https://developdayo.imgix.net'
   }
 }
