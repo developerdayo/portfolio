@@ -8,7 +8,7 @@ type Props = {
 
 const RenderCursor = () => {
   const router = useRouter();
-  if (router.pathname !== '/about-me') {
+  if (router.pathname === '/') {
     return <Cursor />;
   }
 }
@@ -18,7 +18,7 @@ export default function Global({ children }: Props) {
   return (
     <>
       {children}
-      {/* RenderCursor() */}
+      {RenderCursor()}
       <style jsx global>{`
         #__next, main {
           height: 100%;

@@ -73,7 +73,7 @@ function MyApp( pageProps: AppProps) {
           height: 200vh;
           width: 200%;
           margin: 0;
-          background: transparent url('/noise-transparent.png') repeat 0 0;
+          background: transparent url('/portfolio/noise-transparent.png') repeat 0 0;
           background-repeat: repeat;
           animation: bg-animation .25s infinite;
           opacity: .9;
