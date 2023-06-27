@@ -29,6 +29,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.4.2
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
-          repository-name: https://github.com/developerdayo/portfolio
           branch: gh-pages
           folder: out
