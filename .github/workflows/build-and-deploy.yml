@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
       - uses: actions/setup-node@v3
         with:
@@ -28,7 +28,5 @@ jobs:
         # https://github.com/JamesIves/github-pages-deploy-action
         uses: JamesIves/github-pages-deploy-action@v4.4.2
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          REPOSITORY_NAME: https://github.com/developerdayo/portfolio
           branch: gh-pages
           folder: out
