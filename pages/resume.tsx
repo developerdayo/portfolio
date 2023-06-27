@@ -73,7 +73,7 @@ export default function firstChallenge() {
                   </div>
                 </>
               </VerticalContentContainer>
-              <VerticalContentContainer size={'large'}>
+              <VerticalContentContainer altText='' backgroundImage='' size={'large'}>
                 <>
                   <h2>Experience</h2>
                   <hr />
