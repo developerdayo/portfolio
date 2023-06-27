@@ -1,0 +1,1 @@
+.Cursor_spotlight__WmHtp{position:fixed;top:0;right:0;height:100%;width:100%;animation:Cursor_breathing__CFJrb 3s infinite;background-image:radial-gradient(circle,transparent 2%,rgba(0,0,0,.3) 100%);z-index:var(--z-index-background-1)}@keyframes Cursor_breathing__CFJrb{0%{transform:scale(1)}50%{transform:scale(1.5)}to{transform:scale(1)}}
