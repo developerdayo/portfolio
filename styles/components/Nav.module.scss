@@ -50,7 +50,7 @@
   position: fixed;
   right: calc($margin-md + $padding-md);
   bottom: calc($margin-md + $padding-md);
-  color: $white;
+  color: var(--color-text-primary);
 
   .interior & {
     right: calc($padding-xxlg / 2);
@@ -82,6 +82,10 @@
     .interior & {
       right: 170px;
       bottom: -4px;
+
+      @media #{$smUp} {
+        bottom: 0;
+      }
     }
 
     @media #{$smUp} {
