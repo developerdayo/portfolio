@@ -22,7 +22,7 @@ export default function firstChallenge() {
                   <h2>Skills</h2>
                   <hr />
                   <div className={styles['flex']}>
-                    <div className={`${styles['xs-50']} ${styles['sm-25']}`}>
+                    <div className={`${styles['xs-50']} ${styles['sm-50']} ${styles['md-25']}`}>
                       <h3>Languages & Libraries</h3>
                       <ul>
                         <li>HTML</li>
@@ -42,7 +42,7 @@ export default function firstChallenge() {
                         <li>Shopify Liquid</li>
                       </ul>
                     </div>
-                    <div className={`${styles['xs-50']} ${styles['sm-25']}`}>
+                    <div className={`${styles['xs-50']} ${styles['xs-100']} ${styles['sm-50']} ${styles['md-25']}`}>
                       <h3>Applications</h3>
                       <ul>
                         <li>Photoshop</li>
@@ -51,7 +51,7 @@ export default function firstChallenge() {
                         <li>Google Tag Manager</li>
                       </ul>
                     </div>
-                    <div className={`${styles['xs-50']} ${styles['sm-25']}`}>
+                    <div className={`${styles['xs-50']} ${styles['xs-100']} ${styles['sm-50']} ${styles['md-25']}`}>
                       <h3>Platforms</h3>
                       <ul>
                         <li>Adobe Experience Manager</li>
@@ -61,7 +61,7 @@ export default function firstChallenge() {
                         <li>DotNetNuke</li>
                       </ul>
                     </div>
-                    <div className={`${styles['xs-50']} ${styles['sm-25']}`}>
+                    <div className={`${styles['xs-50']} ${styles['xs-100']} ${styles['sm-50']} ${styles['md-25']}`}>
                       <h3>Practices</h3>
                       <ul>
                         <li>Web Accessibility (WCAG) Implementation & Testing</li>
@@ -79,51 +79,51 @@ export default function firstChallenge() {
                   <h2>Experience</h2>
                   <hr />
                   <div className={`${styles.flex} ${styles.divide}`}>
-                    <div className={`${styles['xs-100']} ${styles['sm-25']}`}>
+                    <div className={`${styles['sm-25']} ${styles['md-25']}`}>
                       <h3>Slalom</h3>
                       <span>Nov 2020 – Present</span>
                     </div>
-                    <div className={`${styles['xs-100']} ${styles['sm-75']}`}>
+                    <div className={`${styles['sm-75']} ${styles['md-75']}`}>
                       <h4>Senior Consultant</h4>
                       <p className={global['xs']}>Works on large-scale projects with the client project team as a software engineer/consultant. Specializes in developing web solutions on coupled or decoupled Adobe Experience Manager and formulates frontend stack depending on project needs often with React.js or Vue.js. Outside of development, performs functions in other roles such as Personal Privacy expertise, Project Solution Owner, and design system architecture consultation.</p>
                     </div>
                   </div>
                   <div className={`${styles.flex} ${styles.divide}`}>
-                    <div className={`${styles['xs-100']} ${styles['sm-25']}`}>
+                    <div className={`${styles['sm-25']} ${styles['md-25']}`}>
                       <h3>Centretek</h3>
                       <span>Dec 2015 – Nov 2020</span>
                     </div>
-                    <div className={`${styles['xs-100']} ${styles['sm-75']}`}>
+                    <div className={`${styles['sm-75']} ${styles['md-75']}`}>
                       <h4>Lead Front End Developer</h4>
                       <p className={global['xs']}>Develop responsive websites from internal and third party designs utilizing HTML, CSS, and Javascript on numerous CMS. Catered to and tested projects across browsers, various devices, and support for screen readers while testing for ADA errors. Conducted code reviews for the front end team and continuous development of code standards for easy collaboration. Provide education and strategies (beyond the front end team) to aid in efficiency and utilization of the latest technology.</p>
                     </div>
                   </div>
                   <div className={`${styles.flex} ${styles.divide}`}>
-                    <div className={`${styles['xs-100']} ${styles['sm-25']}`}>
+                    <div className={`${styles['sm-25']} ${styles['md-25']}`}>
                       <h3>R2integrated</h3>
                       <span>Oct 2011 – Dec 2015</span>
                     </div>
-                    <div className={`${styles['xs-100']} ${styles['sm-75']}`}>
+                    <div className={`${styles['sm-75']} ${styles['md-75']}`}>
                       <h4>Front End Developer</h4>
                       <p className={global['xs']}>Created responsive websites and intranets across numerous CMS and HTML/CSS animated advertisements. Worked on a team of front end developers and followed strict standards for efficient web development.</p>
                     </div>
                   </div>
                   <div className={`${styles.flex} ${styles.divide}`}>
-                    <div className={`${styles['xs-100']} ${styles['sm-25']}`}>
+                    <div className={`${styles['sm-25']} ${styles['md-25']}`}>
                       <h3>Go Safer Security</h3>
                       <span>Sep 2010 – Oct 2011</span>
                     </div>
-                    <div className={`${styles['xs-100']} ${styles['sm-75']}`}>
+                    <div className={`${styles['sm-75']} ${styles['md-75']}`}>
                       <h4>Front End Developer/Designer</h4>
                       <p className={global['xs']}>Developed and maintained the company website utilizing HTML, CSS, and JavaScript. Designed and developed the company brand and identity. Monitored web analytics and reported findings to the CEO and content team. Lead creative efforts for web, print, and radio advertisement. Worked with the development team to develop a custom CRM solution.</p>
                     </div>
                   </div>
                   <div className={`${styles.flex}`}>
-                    <div className={`${styles['xs-100']} ${styles['sm-25']}`}>
+                    <div className={`${styles['sm-25']} ${styles['md-25']}`}>
                       <h3>Goel Enterprise, Inc</h3>
                       <span>Jan 2007 – Sep 2010</span>
                     </div>
-                    <div className={`${styles['xs-100']} ${styles['sm-75']}`}>
+                    <div className={`${styles['sm-75']} ${styles['md-75']}`}>
                       <h4>Front End Developer/Designer</h4>
                       <p className={global['xs']}>Designed, developed, and managed content for the static company website utilizing HTML and CSS. Aided creative team in brand and identity efforts.</p>
                     </div>

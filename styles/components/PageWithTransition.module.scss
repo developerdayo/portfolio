@@ -7,7 +7,7 @@
   position: relative;
   height: calc(100vh - ($padding-xxlg));
   width: calc(100vw - ($padding-xxlg));
-  padding: calc($padding-xxlg / 2);
+  padding: 15px;
   margin: calc($padding-xxlg / 2);
   animation: 9s ease infinite gradient;
   background: linear-gradient(45deg, #35394d, #4f838c, #5ab3b5, #9dc4a5);

@@ -2,24 +2,47 @@
 @import '../styles/variables/variables.color.module';
 @import '../styles/variables/variables.spacing.module';
 @import '../styles/mixins/mixins.font.module';
+@import '../styles/mixins/mixins.width.module';
 
 .xs-50 {
-  width: 50%;
-}
-
-.xs-100 {
-  width: 100%;
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    @include width(50%, $padding-sm);
+  }
 }
 
 .sm-25 {
   @media #{$smUp} {
-    width: 25%;
+    @include width(25%, $padding-sm);
+  }
+}
+
+.sm-50 {
+  @media #{$smUp} {
+    @include width(50%, $padding-sm);
   }
 }
 
 .sm-75 {
   @media #{$smUp} {
-    width: 75%;
+    @include width(75%, $padding-sm);
+  }
+}
+
+.sm-100 {
+  @media #{$smUp} {
+    width: 100%;
+  }
+}
+
+.md-25 {
+  @media #{$mdUp} {
+    @include width(25%, $padding-sm);
+  }
+}
+
+.md-75 {
+  @media #{$mdUp} {
+    @include width(75%, $padding-sm);
   }
 }
 
@@ -32,8 +55,5 @@
 .flex {
   display: flex;
   flex-wrap: wrap;
-
-  @media #{$smUp} {
-    flex-wrap: nowrap;
-  }
+  gap: $padding-sm;
 }

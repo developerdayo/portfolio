@@ -1,0 +1,3 @@
+@mixin width($width: 100%, $gap: 0) {
+  width: calc($width - $gap);
+}
