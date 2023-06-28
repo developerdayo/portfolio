@@ -49,6 +49,8 @@ export default function firstChallenge() {
                         <li>Sketch</li>
                         <li>Figma</li>
                         <li>Google Tag Manager</li>
+                        <li>Jira</li>
+                        <li>Confluence</li>
                       </ul>
                     </div>
                     <div className={`${styles['xs-50']} ${styles['xs-100']} ${styles['sm-50']} ${styles['md-25']}`}>
@@ -94,8 +96,8 @@ export default function firstChallenge() {
                       <span>Dec 2015 – Nov 2020</span>
                     </div>
                     <div className={`${styles['sm-75']} ${styles['md-75']}`}>
-                      <h4>Lead Front End Developer</h4>
-                      <p className={global['xs']}>Develop responsive websites from internal and third party designs utilizing HTML, CSS, and Javascript on numerous CMS. Catered to and tested projects across browsers, various devices, and support for screen readers while testing for ADA errors. Conducted code reviews for the front end team and continuous development of code standards for easy collaboration. Provide education and strategies (beyond the front end team) to aid in efficiency and utilization of the latest technology.</p>
+                      <h4>Technology Manager/Lead Front End Developer</h4>
+                      <p className={global['xs']}>Performed managerial and frontend engineering tasks. Developed and designed a number of programs and rituals across the frontend and backend team including: 360 code reviews, regular knowledge sharing brown bags, internal wikis containing project information and case studies, project frameworks/boilerplates and scaffolding tools, command line tools to automate and circumvent errors working with complex git workflows, npm packages, daily scrums with rotating scrum leaders, and conducted bi-annual and annual reviews. I assisted with reviewing Scope of Work proposals and requirements and designed a system for breaking out comprehensive engineering tasks into issue tracking tools. I built and managed a mixed team of full-time and remote frontend engineers including team members in different time zones and countries. I assisted each team member with improving upon their weaknesses and honing in on their strengths. I helped team members develop leadership skills and gave opportunities to exercise them to become an increasingly efficient and skillful team.</p>
                     </div>
                   </div>
                   <div className={`${styles.flex} ${styles.divide}`}>

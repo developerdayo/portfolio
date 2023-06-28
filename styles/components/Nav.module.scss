@@ -53,7 +53,7 @@
   color: var(--color-text-primary);
 
   .interior & {
-    right: calc($padding-xxlg / 2);
+    right: $padding-lg;
     bottom: -4px;
   }
 
@@ -80,7 +80,7 @@
     bottom: calc($margin-md + $padding-md + 40px);
 
     .interior & {
-      right: 170px;
+      right: 180px;
       bottom: -4px;
 
       @media #{$smUp} {
