@@ -22,7 +22,7 @@
 
 .content {
   position: relative;
-  padding: $padding-md;
+  padding: $padding-lg-1 $padding-md $padding-xlg;
   background-color: var(--color-background-translucent);
   transition: background-color var(--timing-background) $easeInOut;
   z-index: var(--z-index-background-0);
@@ -37,8 +37,22 @@
   top: 50%;
   left: 50%;
   max-width: none;
-  min-height: calc(100% + 50px);
+  min-height: calc(100% + 100px);
   min-width: 100vw;
+  animation: bg-animation 30s forwards;
   transform: translate(-50%, -50%);
   z-index: var(--z-index-background-1);
+
+  @media #{$smUp} {
+    animation: none;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    left: 50%;
+  }
+  100% {
+    left: 0;
+  }
 }

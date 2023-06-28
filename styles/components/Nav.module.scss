@@ -52,6 +52,11 @@
   bottom: calc($margin-md + $padding-md);
   color: $white;
 
+  .interior & {
+    right: calc($padding-xxlg / 2);
+    bottom: -4px;
+  }
+
   @media #{$smUp} {
     right: calc($margin-lg + $padding-lg);
     bottom: calc($margin-lg + $padding-lg);
@@ -74,12 +79,13 @@
   &-top {
     bottom: calc($margin-md + $padding-md + 40px);
 
+    .interior & {
+      right: 170px;
+      bottom: -4px;
+    }
+
     @media #{$smUp} {
       bottom: calc($margin-lg + $padding-lg + 40px);
-
-      .interior & {
-        right: 230px;
-      }
     }
 
     a {
