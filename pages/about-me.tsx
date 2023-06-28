@@ -20,7 +20,7 @@ export default function firstChallenge() {
                 size='small'
               >
                 <>
-                  <h2>hi, i&apos;m sarah<br />& i&apos;m so glad to meet you:</h2>
+                  <h2>hi, i&apos;m sarah<br />& i&apos;m so glad to meet you 🙂</h2>
                   <p>Thank you so much for taking the time to get to know me.</p>
                   <p>I&apos;ve been working professionally as a front end engineer (and in the past, designer) for 16 years. As a pre-teen/teenager, I did this as a hobby to make fan sites for my favorite video games and anime.</p>
                   <p>As a professional, I have worked my way through roles from junior–senior engineer to Technology Manager (in which I built a team of permanent full-time and international contracting frontend end engineers).</p>

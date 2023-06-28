@@ -55,10 +55,20 @@
   @media #{$smUp} {
     right: calc($margin-lg + $padding-lg);
     bottom: calc($margin-lg + $padding-lg);
+
+    .interior & {
+      bottom: 0;
+    }
   }
 
-  a, li::before {
-    color: $white;
+  a, &::before {
+    .home & {
+      color: var(--color-nav-text-primary);
+    }
+
+    .interior & {
+     color: var(--color-text-primary);
+    }
   }
 
   &-top {
@@ -66,6 +76,16 @@
 
     @media #{$smUp} {
       bottom: calc($margin-lg + $padding-lg + 40px);
+
+      .interior & {
+        right: 230px;
+      }
+    }
+
+    a {
+      [data-theme='light'] .interior & {
+        @include underline();
+      }
     }
   }
 }
@@ -120,9 +140,23 @@
   background-size: contain;
   color: $white;
 
+  .home & {
+    color: $white;
+  }
+
+  .interior & {
+    color: var(--color-theme-interior-text);
+  }
+
   &:disabled {
     &::after {
-      @include flashlight-on;
+      .home & {
+        @include flashlight-on;
+      }
+
+      .interior & {
+        @include flashlight-on(black);
+      }
     }
   }
 
@@ -134,18 +168,36 @@
 }
 
 .dark-mode {
-  color: $offBlack;
-  font-weight: 600;
+  .home & {
+    color: $offBlack;
+    font-weight: 600;
+  }
+
+  .interior & {
+    color: var(--color-theme-interior-text);
+  }
 
   &:disabled {
     &::after {
       @include flashlight-off;
+
+      [data-theme='dark'] .interior & {
+        @include flashlight-off(white);
+      }
+
+      [data-theme='light'] .interior & {
+        @include flashlight-off();
+      }
     }
   }
 
   &:hover {
     &::after {
       @include flashlight-off;
+
+      .interior & {
+        @include flashlight-off(--var(--color-icon-interior));
+      }
     }
   }
 }
@@ -156,29 +208,6 @@
   ul {
     padding: 0;
     list-style: none;
-  }
-}
-
-.pseudo-bg {
-  &:hover::before {
-    background-color: rgb(53, 57, 77, .85);
-  }
-
-  &::before {
-    position: fixed;
-    right: calc($margin-md + $padding-md - ($padding-md / 2));
-    bottom: calc($margin-md + $padding-md - ($padding-md / 2) - 15px);
-    height: 150px;
-    width: 150px;
-    background-color: rgb(53, 57, 77, .65);
-    border-radius: 100%;
-    content: '';
-    transition: background-color var(--timing-background) $easeInOut;
-  
-    @media #{$smUp} {
-      right: calc(($margin-lg + $padding-lg) - ($padding-lg / 2));
-      bottom: calc(($margin-lg + $padding-lg) - ($padding-lg / 2) - 10px);
-    }
   }
 }
 

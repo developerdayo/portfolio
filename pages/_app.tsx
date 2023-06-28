@@ -29,9 +29,11 @@ function MyApp( pageProps: AppProps) {
         :root[data-theme="dark"] {
           --color-border-primary: ${colors['offBlack']};
           --color-text-primary: ${colors['gray']};
+          --color-nav-text-primary: ${colors['white']};
           --color-background: ${colors['offBlack']};
           --color-background-translucent: rgb(34, 35, 35, .95);
           --color-hr: ${colors['lightGray']};
+          --color-theme-interior-text: ${colors['white']};
           --color-link-style-background: ${colors['gray']};
           --color-link-style-background-hov: ${colors['gray']};
           --color-link-style-text: ${colors['lightGray']};
@@ -41,8 +43,10 @@ function MyApp( pageProps: AppProps) {
         :root[data-theme="light"] {
           --color-border-primary: ${colors['white']};
           --color-text-primary: ${colors['offBlack']};
+          --color-nav-text-primary: ${colors['lightGray']};
           --color-background: ${colors['white']};
           --color-background-translucent: rgb(255, 255, 255, .95);
+          --color-theme-interior-text: ${colors['offBlack']};
           --color-hr: ${colors['darkTeal']};
           --color-link-style-background: ${colors['gray']};
           --color-link-style-background-hov: ${colors['darkTeal']};

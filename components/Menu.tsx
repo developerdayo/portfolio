@@ -17,17 +17,17 @@ const Menu = () => {
 
   return (
     <nav aria-labelledby="navMenuLabel">
-    <ol className={router.pathname === '/about-me' || router.pathname === '/resume' ? `${nav['pseudo-bg']}` : '' }>
-      <li><Link onClick={(e) => handleClick('/about-me', e)} href="/about-me">about me</Link></li>
-      <li><Link onClick={(e) => handleClick('/resume', e)} href="/resume">resume</Link></li>
-      <li><Link onClick={(e) => handleClick('mailto:sarah.an.ferguson@gmail.com', e)} href="mailto:sarah.an.ferguson@gmail.com">contact</Link></li>
-      <li className={`${nav['li-absolute']} ${nav['li-absolute-top']}`}>
-        <Link href="https://www.linkedin.com/in/sarah-ferguson-22167016/" target="_blank">linkedin</Link>
-      </li>
-      <li className={nav['li-absolute']}>
-        <Toggle selectors={nav['light-mode']} text="light" /> | <Toggle selectors={nav['dark-mode']} text="dark" />
-      </li>
-    </ol>
+      <ol className={router.pathname === '/' ? `${nav.home}` : `${nav.interior}` }>
+        <li><Link onClick={(e) => handleClick('/about-me', e)} href="/about-me">about me</Link></li>
+        <li><Link onClick={(e) => handleClick('/resume', e)} href="/resume">resume</Link></li>
+        <li><Link onClick={(e) => handleClick('mailto:sarah.an.ferguson@gmail.com', e)} href="mailto:sarah.an.ferguson@gmail.com">contact</Link></li>
+        <li className={`${nav['li-absolute']} ${nav['li-absolute-top']}`}>
+          <Link href="https://www.linkedin.com/in/sarah-ferguson-22167016/" target="_blank">linkedin</Link>
+        </li>
+        <li className={nav['li-absolute']}>
+          <Toggle selectors={nav['light-mode']} text="light" /> | <Toggle selectors={nav['dark-mode']} text="dark" />
+        </li>
+      </ol>
     </nav>
   );
 }

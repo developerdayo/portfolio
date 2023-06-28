@@ -14,7 +14,6 @@ const RenderCursor = () => {
 }
 
 export default function Global({ children }: Props) {
-
   return (
     <>
       {children}
