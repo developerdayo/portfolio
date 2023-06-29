@@ -141,7 +141,7 @@ export default function firstChallenge() {
                     </div>
                     <div className={`${styles['sm-75']} ${styles['md-75']}`}>
                       <h4>Master Certification, Web Development & Design</h4>
-                      <p className={global['xs']}>Master Certification, Web Development & Design.</p>
+                      <p className={global['xs']}>Master Certification, Web Development & Design</p>
                     </div>
                   </div>
                 </>

@@ -33,7 +33,7 @@
     }
   }
 
-  .li-absolute a, .li-absolute &::before {
+  .li-absolute a, .li-absolute::before {
     color: var(--color-nav-text-primary);
   }
 
@@ -48,10 +48,14 @@
 
 .interior {
   position: fixed;
-  bottom: -4px;
+
+  @media screen and (max-width: 767px) {
+    top: 2px;
+    left: 35px;
+  }
 
   @media #{$smUp} {
-    bottom: 0;
+    bottom: 3px;
   }
 
   a {
@@ -83,7 +87,13 @@
 
   .li-absolute {
     position: fixed;
-    right: calc($margin-lg + $padding-lg);
+    right: 20px;
+    bottom: -3px;
+
+    @media #{$smUp} {
+      right: calc($margin-lg + $padding-lg);
+      bottom: 3px;
+    }
   }
 
   .li-absolute a, .li-absolute &::before {
@@ -98,10 +108,11 @@
 
   .li-absolute-top {
     bottom: -3px;
+    right: 150px;
 
     @media #{$smUp} {
       right: 230px;
-      bottom: 0;
+      bottom: 3px;
     }
   }
 
@@ -120,14 +131,12 @@
 }
 
 .dark-mode {
-  &:disabled {
-    &::after {
-      @include flashlight-off;
-    }
+  &:disabled::after {
+    @include flashlight-off;
   }
 
-  &:hover {
-    &::after {
+  &:hover::after {
+    @media (hover: hover) {
       @include flashlight-off;
     }
   }
@@ -143,15 +152,17 @@
   z-index: var(--z-index-foreground-0);
 
   &:hover {
-    animation: .75s $easeOut 100ms forwards light-dark-mode-button;
-    cursor: pointer;
+    @media (hover: hover) {
+      animation: .75s $easeOut 100ms forwards light-dark-mode-button;
+      cursor: pointer;
+    
+      &:disabled {
+        cursor: default;
+      }
   
-    &:disabled {
-      cursor: default;
-    }
-
-    &::after {
-      animation: .75s $easeOut 100ms forwards light-dark-mode-icon;
+      &::after {
+        animation: .75s $easeOut 100ms forwards light-dark-mode-icon;
+      }
     }
   }
 
@@ -183,8 +194,8 @@
   background-size: contain;
   color: $white;
 
-  &:hover {
-    &::after {
+  &:hover::after {
+    @media (hover: hover) {
       @include flashlight-on;
     }
   }
