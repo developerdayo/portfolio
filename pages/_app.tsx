@@ -1,6 +1,10 @@
 import { ThemeProvider } from 'next-themes';
 import type { AppProps } from "next/app";
+
+// components
 import PageWithTransition from '../components/PageWithTransition';
+
+// styles
 import colors from '../styles/variables/_variables.color.module.scss';
 import easing from '../styles/variables/_variables.easing.module.scss';
 

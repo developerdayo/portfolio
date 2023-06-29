@@ -1,5 +1,9 @@
 import { useRouter } from 'next/router';
+
+// components
 import Cursor from '../components/Cursor';
+
+// styles
 import colors from '../styles/variables/_variables.color.module.scss';
 
 type Props = {

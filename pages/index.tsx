@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Global from './Layout';
+
+// components
 import Nav from '../components/Header';
 
 // styles

@@ -1,5 +1,6 @@
-// components
 import Global from './Layout';
+
+// components
 import Nav from '../components/Header';
 import VerticalContentContainer from '../components/VerticalContentContainer';
 
