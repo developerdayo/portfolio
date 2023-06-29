@@ -1,5 +1,5 @@
 import Global from '../Layout';
-import Nav from '../../components/Nav';
+import Nav from '../../components/Header';
 
 // styles
 import helpers from '../../styles/helpers/_helpers.module.scss';

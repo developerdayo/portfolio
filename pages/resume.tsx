@@ -1,10 +1,8 @@
 // components
 import Global from './Layout';
-import Nav from '../components/Nav';
+import Nav from '../components/Header';
 import VerticalContentContainer from '../components/VerticalContentContainer';
 import styles from '../styles/Resume.module.scss';
-
-// images
 
 // styles
 import helpers from '../styles/helpers/_helpers.module.scss';
@@ -96,7 +94,7 @@ export default function firstChallenge() {
                       <span>Dec 2015 – Nov 2020</span>
                     </div>
                     <div className={`${styles['sm-75']} ${styles['md-75']}`}>
-                      <h4>Technology Manager/Lead Front End Developer</h4>
+                      <h4>Technology Manager/Lead Frontend Developer</h4>
                       <p className={global['xs']}>Performed managerial and frontend engineering tasks. Developed and designed a number of programs and rituals across the frontend and backend team including: 360 code reviews, regular knowledge sharing brown bags, internal wikis containing project information and case studies, project frameworks/boilerplates and scaffolding tools, command line tools to automate and circumvent errors working with complex git workflows, npm packages, daily scrums with rotating scrum leaders, and conducted bi-annual and annual reviews. I assisted with reviewing Scope of Work proposals and requirements and designed a system for breaking out comprehensive engineering tasks into issue tracking tools. I built and managed a mixed team of full-time and remote frontend engineers including team members in different time zones and countries. I assisted each team member with improving upon their weaknesses and honing in on their strengths. I helped team members develop leadership skills and gave opportunities to exercise them to become an increasingly efficient and skillful team.</p>
                     </div>
                   </div>
@@ -106,8 +104,8 @@ export default function firstChallenge() {
                       <span>Oct 2011 – Dec 2015</span>
                     </div>
                     <div className={`${styles['sm-75']} ${styles['md-75']}`}>
-                      <h4>Front End Developer</h4>
-                      <p className={global['xs']}>Created responsive websites and intranets across numerous CMS and HTML/CSS animated advertisements. Worked on a team of front end developers and followed strict standards for efficient web development.</p>
+                      <h4>Frontend Developer</h4>
+                      <p className={global['xs']}>Created responsive websites and intranets across numerous CMS and HTML/CSS animated advertisements. Worked on a team of frontend developers and followed strict standards for efficient web development.</p>
                     </div>
                   </div>
                   <div className={`${styles.flex} ${styles.divide}`}>
@@ -116,7 +114,7 @@ export default function firstChallenge() {
                       <span>Sep 2010 – Oct 2011</span>
                     </div>
                     <div className={`${styles['sm-75']} ${styles['md-75']}`}>
-                      <h4>Front End Developer/Designer</h4>
+                      <h4>Frontend Developer/Designer</h4>
                       <p className={global['xs']}>Developed and maintained the company website utilizing HTML, CSS, and JavaScript. Designed and developed the company brand and identity. Monitored web analytics and reported findings to the CEO and content team. Lead creative efforts for web, print, and radio advertisement. Worked with the development team to develop a custom CRM solution.</p>
                     </div>
                   </div>
@@ -126,8 +124,24 @@ export default function firstChallenge() {
                       <span>Jan 2007 – Sep 2010</span>
                     </div>
                     <div className={`${styles['sm-75']} ${styles['md-75']}`}>
-                      <h4>Front End Developer/Designer</h4>
+                      <h4>Frontend Developer/Designer</h4>
                       <p className={global['xs']}>Designed, developed, and managed content for the static company website utilizing HTML and CSS. Aided creative team in brand and identity efforts.</p>
+                    </div>
+                  </div>
+                </>
+              </VerticalContentContainer>
+              <VerticalContentContainer size='large'>
+                <>
+                  <h2>Skills</h2>
+                  <hr />
+                  <div className={styles['flex']}>
+                    <div className={`${styles['sm-25']} ${styles['md-25']}`}>
+                      <h3>Sessions College</h3>
+                      <span>2007 – 2009</span>
+                    </div>
+                    <div className={`${styles['sm-75']} ${styles['md-75']}`}>
+                      <h4>Master Certification, Web Development & Design</h4>
+                      <p className={global['xs']}>Master Certification, Web Development & Design.</p>
                     </div>
                   </div>
                 </>

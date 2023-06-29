@@ -1,6 +1,6 @@
 // components
 import Global from './Layout';
-import Nav from '../components/Nav';
+import Nav from '../components/Header';
 import VerticalContentContainer from '../components/VerticalContentContainer';
 
 // styles
