@@ -69,6 +69,7 @@ export default function firstChallenge() {
                         <li>Personal Identifiable Information Security / GDPR / CCPA Compliance</li>
                         <li>Cookie Consent Implementation</li>
                         <li>Design Systems</li>
+                        <li>CI/CD</li>
                       </ul>
                     </div>
                   </div>
