@@ -16,6 +16,8 @@ export default function firstChallenge() {
           <main>
             <Nav>
               <VerticalContentContainer
+                altText="Portrait of me seated in front of my computer in my old company office, laughing"
+                backgroundImage='me.JPG'
                 size='small'
               >
                 <>
