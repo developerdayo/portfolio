@@ -76,7 +76,7 @@ export default function firstChallenge() {
                     </div>
                     <div className={`${helpers['sm-75']} ${helpers['md-75']}`}>
                       <h4>Senior Software Developer/Consultant</h4>
-                      <p className={global['xs']}>Works on large-scale projects with the client project team as a software developer/consultant. Specializes in developing web solutions on coupled or decoupled Adobe Experience Manager and formulates frontend stack depending on project needs often with React.js or Vue.js. Outside of development, performs functions in other roles such as Personal Privacy expertise, Project Solution Owner, and design system architecture consultation.</p>
+                      <p className={global['xs']}>As a software developer and consultant, I collaborate with client project teams on large-scale initiatives. I specialize in creating web solutions in both coupled and decoupled Adobe Experience Manager systems environments (along with other CMS platforms), tailoring the front-end stack to project requirements, frequently leveraging React.js or Vue.js. Beyond development, I contribute in various capacities including Personal Privacy expertise, Project Solution Ownership, and design system architecture consultation.</p>
                     </div>
                   </div>
                   <div className={`${helpers.flex} ${helpers.divide}`}>
@@ -86,7 +86,7 @@ export default function firstChallenge() {
                     </div>
                     <div className={`${helpers['sm-75']} ${helpers['md-75']}`}>
                       <h4>Lead Developer</h4>
-                      <p className={global['xs']}>Performed managerial and frontend developering tasks. Developed and designed a number of programs and rituals across the frontend and backend team including: 360 code reviews, regular knowledge sharing brown bags, internal wikis containing project information and case studies, project frameworks/boilerplates and scaffolding tools, command line tools to automate and circumvent errors working with complex git workflows, npm packages, daily scrums with rotating scrum leaders, and conducted bi-annual and annual reviews. I assisted with reviewing Scope of Work proposals and requirements and designed a system for breaking out comprehensive developering tasks into issue tracking tools. I built and managed a mixed team of full-time and remote frontend developers including team members in different time zones and countries. I assisted each team member with improving upon their weaknesses and honing in on their strengths. I helped team members develop leadership skills and gave opportunities to exercise them to become an increasingly efficient and skillful team.</p>
+                      <p className={global['xs']}>Developed and designed a number of programs and rituals across the front-end and back-end team including: 360 code reviews, regular knowledge sharing brown bags, internal wikis containing project information and case studies, project frameworks/boilerplates and scaffolding tools, command line tools to automate and circumvent errors working with complex git workflows, npm packages, daily scrums with rotating scrum leaders, and conducted bi-annual and annual reviews. I assisted with reviewing Scope of Work proposals and requirements and designed a system for breaking out comprehensive development tasks into issue tracking tools. I built and managed a mixed team of full-time and remote front-end developers including team members in different time zones and countries. I assisted each team member with improving weak points in skill-sets and honing in on their strengths. I helped team members develop leadership skills and gave opportunities to exercise them to become an increasingly efficient and skillful team.</p>
                     </div>
                   </div>
                   <div className={`${helpers.flex} ${helpers.divide}`}>
@@ -95,8 +95,8 @@ export default function firstChallenge() {
                       <span>Oct 2011 – Dec 2015</span>
                     </div>
                     <div className={`${helpers['sm-75']} ${helpers['md-75']}`}>
-                      <h4>Frontend Developer</h4>
-                      <p className={global['xs']}>Created responsive websites and intranets across numerous CMS and HTML/CSS animated advertisements. Worked on a team of frontend developers and followed strict standards for efficient web development.</p>
+                      <h4>Front-end Developer</h4>
+                      <p className={global['xs']}>Created responsive websites and intranets across numerous CMS and HTML/CSS animated advertisements. Worked on a team of front-end developers and followed strict standards for efficient web development.</p>
                     </div>
                   </div>
                   <div className={`${helpers.flex} ${helpers.divide}`}>
@@ -105,8 +105,8 @@ export default function firstChallenge() {
                       <span>Sep 2010 – Oct 2011</span>
                     </div>
                     <div className={`${helpers['sm-75']} ${helpers['md-75']}`}>
-                      <h4>Frontend Developer/Designer</h4>
-                      <p className={global['xs']}>Developed and maintained the company website utilizing HTML, CSS, and JavaScript. Designed and developed the company brand and identity. Monitored web analytics and reported findings to the CEO and content team. Lead creative efforts for web, print, and radio advertisement. Worked with the development team to develop a custom CRM solution.</p>
+                      <h4>Front-end Developer/Designer</h4>
+                      <p className={global['xs']}>Developed and maintained the company website using HTML, CSS, and JavaScript. Designed and established the company&apos;s brand and identity. Monitored web analytics and reported insights to the CEO and content team. Led creative initiatives for web, print, and radio advertisements. Collaborated with the development team to create a custom CRM solution.</p>
                     </div>
                   </div>
                   <div className={`${helpers.flex}`}>
@@ -115,7 +115,7 @@ export default function firstChallenge() {
                       <span>Jan 2007 – Sep 2010</span>
                     </div>
                     <div className={`${helpers['sm-75']} ${helpers['md-75']}`}>
-                      <h4>Frontend Developer/Designer</h4>
+                      <h4>Front-end Developer/Designer</h4>
                       <p className={global['xs']}>Designed, developed, and managed content for the static company website utilizing HTML and CSS. Aided creative team in brand and identity efforts.</p>
                     </div>
                   </div>
