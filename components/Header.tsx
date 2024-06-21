@@ -20,7 +20,7 @@ export default function Nav({children}: Props) {
         <h1 className={styles['title']}>
           <Link href="/">sarah ferguson</Link>
         </h1>
-        <span className={helpers['block']}>frontend engineer</span>
+        <span className={helpers['block']}>software developer</span>
         <span className={helpers['block']}><Link href="https://github.com/developerdayo" target="_blank">github.com/developerdayo</Link></span>
       </div>
       {children}

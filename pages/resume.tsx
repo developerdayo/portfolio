@@ -20,8 +20,8 @@ export default function firstChallenge() {
                   <h2>Skills</h2>
                   <hr />
                   <div className={helpers['flex']}>
-                    <div className={`${helpers['xs-50']} ${helpers['sm-50']} ${helpers['md-25']}`}>
-                      <h3>Languages & Libraries</h3>
+                    <div className={`${helpers['xs-100']} ${helpers['sm-50']} ${helpers['md-33']}`}>
+                      <h3>Technology</h3>
                       <ul>
                         <li>HTML</li>
                         <li>CSS/SCSS/Less</li>
@@ -40,31 +40,21 @@ export default function firstChallenge() {
                         <li>Shopify Liquid</li>
                       </ul>
                     </div>
-                    <div className={`${helpers['xs-50']} ${helpers['xs-100']} ${helpers['sm-50']} ${helpers['md-25']}`}>
-                      <h3>Applications</h3>
-                      <ul>
-                        <li>Photoshop</li>
-                        <li>Sketch</li>
-                        <li>Figma</li>
-                        <li>Google Tag Manager</li>
-                        <li>Jira</li>
-                        <li>Confluence</li>
-                      </ul>
-                    </div>
-                    <div className={`${helpers['xs-50']} ${helpers['xs-100']} ${helpers['sm-50']} ${helpers['md-25']}`}>
+                    <div className={`${helpers['xs-100']} ${helpers['xs-100']} ${helpers['sm-50']} ${helpers['md-33']}`}>
                       <h3>Platforms</h3>
                       <ul>
                         <li>Adobe Experience Manager</li>
-                        <li>Wordpress</li>
+                        <li>Shopify</li>
                         <li>Drupal</li>
                         <li>Sitecore</li>
+                        <li>Wordpress</li>
                         <li>DotNetNuke</li>
                       </ul>
                     </div>
-                    <div className={`${helpers['xs-50']} ${helpers['xs-100']} ${helpers['sm-50']} ${helpers['md-25']}`}>
+                    <div className={`${helpers['xs-100']} ${helpers['xs-100']} ${helpers['sm-50']} ${helpers['md-33']}`}>
                       <h3>Practices</h3>
                       <ul>
-                        <li>Web Accessibility (WCAG) Implementation & Testing</li>
+                        <li>Web Accessibility Implementation & Testing (WCAG 2.0)</li>
                         <li>Section 508 Compliance</li>
                         <li>Personal Identifiable Information Security / GDPR / CCPA Compliance</li>
                         <li>Cookie Consent Implementation</li>
@@ -86,7 +76,7 @@ export default function firstChallenge() {
                     </div>
                     <div className={`${helpers['sm-75']} ${helpers['md-75']}`}>
                       <h4>Senior Consultant</h4>
-                      <p className={global['xs']}>Works on large-scale projects with the client project team as a software engineer/consultant. Specializes in developing web solutions on coupled or decoupled Adobe Experience Manager and formulates frontend stack depending on project needs often with React.js or Vue.js. Outside of development, performs functions in other roles such as Personal Privacy expertise, Project Solution Owner, and design system architecture consultation.</p>
+                      <p className={global['xs']}>Works on large-scale projects with the client project team as a software developer/consultant. Specializes in developing web solutions on coupled or decoupled Adobe Experience Manager and formulates frontend stack depending on project needs often with React.js or Vue.js. Outside of development, performs functions in other roles such as Personal Privacy expertise, Project Solution Owner, and design system architecture consultation.</p>
                     </div>
                   </div>
                   <div className={`${helpers.flex} ${helpers.divide}`}>
@@ -95,8 +85,8 @@ export default function firstChallenge() {
                       <span>Dec 2015 – Nov 2020</span>
                     </div>
                     <div className={`${helpers['sm-75']} ${helpers['md-75']}`}>
-                      <h4>Technology Manager/Lead Frontend Developer</h4>
-                      <p className={global['xs']}>Performed managerial and frontend engineering tasks. Developed and designed a number of programs and rituals across the frontend and backend team including: 360 code reviews, regular knowledge sharing brown bags, internal wikis containing project information and case studies, project frameworks/boilerplates and scaffolding tools, command line tools to automate and circumvent errors working with complex git workflows, npm packages, daily scrums with rotating scrum leaders, and conducted bi-annual and annual reviews. I assisted with reviewing Scope of Work proposals and requirements and designed a system for breaking out comprehensive engineering tasks into issue tracking tools. I built and managed a mixed team of full-time and remote frontend engineers including team members in different time zones and countries. I assisted each team member with improving upon their weaknesses and honing in on their strengths. I helped team members develop leadership skills and gave opportunities to exercise them to become an increasingly efficient and skillful team.</p>
+                      <h4>Lead Developer</h4>
+                      <p className={global['xs']}>Performed managerial and frontend developering tasks. Developed and designed a number of programs and rituals across the frontend and backend team including: 360 code reviews, regular knowledge sharing brown bags, internal wikis containing project information and case studies, project frameworks/boilerplates and scaffolding tools, command line tools to automate and circumvent errors working with complex git workflows, npm packages, daily scrums with rotating scrum leaders, and conducted bi-annual and annual reviews. I assisted with reviewing Scope of Work proposals and requirements and designed a system for breaking out comprehensive developering tasks into issue tracking tools. I built and managed a mixed team of full-time and remote frontend developers including team members in different time zones and countries. I assisted each team member with improving upon their weaknesses and honing in on their strengths. I helped team members develop leadership skills and gave opportunities to exercise them to become an increasingly efficient and skillful team.</p>
                     </div>
                   </div>
                   <div className={`${helpers.flex} ${helpers.divide}`}>

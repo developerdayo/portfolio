@@ -81,6 +81,12 @@
   }
 }
 
+.md-33 {
+  @media #{$mdUp} {
+    @include width(33%, $padding-sm);
+  }
+}
+
 .md-75 {
   @media #{$mdUp} {
     @include width(75%, $padding-sm);

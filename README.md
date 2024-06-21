@@ -2,4 +2,4 @@ Portfolio
 -
 Sarah Ferguson
 
-Frontend Engineer | NYC
+Software Developer | NYC
