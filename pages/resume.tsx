@@ -75,7 +75,7 @@ export default function firstChallenge() {
                       <span>Nov 2020 – Present</span>
                     </div>
                     <div className={`${helpers['sm-75']} ${helpers['md-75']}`}>
-                      <h4>Senior Consultant</h4>
+                      <h4>Senior Software Developer/Consultant</h4>
                       <p className={global['xs']}>Works on large-scale projects with the client project team as a software developer/consultant. Specializes in developing web solutions on coupled or decoupled Adobe Experience Manager and formulates frontend stack depending on project needs often with React.js or Vue.js. Outside of development, performs functions in other roles such as Personal Privacy expertise, Project Solution Owner, and design system architecture consultation.</p>
                     </div>
                   </div>
