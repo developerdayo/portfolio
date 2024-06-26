@@ -104,3 +104,12 @@
   flex-wrap: wrap;
   gap: $padding-sm;
 }
+
+.grid {
+  display: grid;
+
+  &--2-col {
+    grid-template-columns: 1fr 1fr;
+    column-gap: $padding-md;
+  }
+}

@@ -22,7 +22,7 @@ export default function firstChallenge() {
                   <div className={helpers['flex']}>
                     <div className={`${helpers['xs-100']} ${helpers['sm-50']} ${helpers['md-33']}`}>
                       <h3>Technology</h3>
-                      <ul>
+                      <ul className={`${helpers['grid']} ${helpers['grid--2-col']}`}>
                         <li>HTML</li>
                         <li>CSS/SCSS/Less</li>
                         <li>GIT</li>
@@ -36,13 +36,15 @@ export default function firstChallenge() {
                         <li>Redux.js</li>
                         <li>Vue.js</li>
                         <li>Vuex</li>
+                        <li>Docker</li>
+                        <li>PostgreSQL</li>
                         <li>Material-UI</li>
                         <li>Shopify Liquid</li>
                       </ul>
                     </div>
                     <div className={`${helpers['xs-100']} ${helpers['xs-100']} ${helpers['sm-50']} ${helpers['md-33']}`}>
                       <h3>Platforms</h3>
-                      <ul>
+                      <ul className={`${helpers['grid']} ${helpers['grid--2-col']}`}>
                         <li>Adobe Experience Manager</li>
                         <li>Shopify</li>
                         <li>Drupal</li>
@@ -53,7 +55,7 @@ export default function firstChallenge() {
                     </div>
                     <div className={`${helpers['xs-100']} ${helpers['xs-100']} ${helpers['sm-50']} ${helpers['md-33']}`}>
                       <h3>Practices</h3>
-                      <ul>
+                      <ul className={`${helpers['grid']} ${helpers['grid--2-col']}`}>
                         <li>Web Accessibility Implementation & Testing (WCAG 2.0)</li>
                         <li>Section 508 Compliance</li>
                         <li>Personal Identifiable Information Security / GDPR / CCPA Compliance</li>
@@ -123,7 +125,7 @@ export default function firstChallenge() {
               </VerticalContentContainer>
               <VerticalContentContainer size='large'>
                 <>
-                  <h2>Skills</h2>
+                  <h2>Education</h2>
                   <hr />
                   <div className={helpers['flex']}>
                     <div className={`${helpers['sm-25']} ${helpers['md-25']}`}>
