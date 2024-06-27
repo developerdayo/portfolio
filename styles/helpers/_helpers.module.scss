@@ -51,28 +51,6 @@
   border-bottom: .5px solid var(--color-hr);
 }
 
-.grid {
-  display: grid;
-
-  &--2-col {
-    grid-template-columns: 1fr 1fr;
-    column-gap: $padding-md;
-  }
-
-  &--3-col {
-    column-gap: $padding-sm;
-    grid-template-columns: 1fr;
-
-    @media #{$mdUp} {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    @media #{$smUp} {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-}
-
 .print-visible {
   display: none;
 
