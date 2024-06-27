@@ -49,7 +49,15 @@
 .interior {
   position: fixed;
 
-  @media screen and (max-width: 767px) {
+  @media print {
+    display: none;
+  }
+
+  @media #{$smUp} {
+    top: 93vh
+  }
+
+  @media #{$smMax} {
     top: 2px;
     left: 35px;
   }
@@ -89,6 +97,10 @@
     position: fixed;
     right: 20px;
     bottom: -3px;
+
+    @media #{$smUp} {
+      top: 93vh
+    }
 
     @media #{$smUp} {
       right: calc($margin-lg + $padding-lg);

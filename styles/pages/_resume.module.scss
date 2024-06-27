@@ -1,0 +1,43 @@
+// variables
+@import '../variables/variables.color.module';
+@import '../variables/_variables.spacing.module';
+
+// mixins
+@import '../mixins/mixins.grid.module';
+
+.skills-container {
+  @include grid-columns($md-col: 1fr 1fr 1fr);
+
+  @media print {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  ul {
+    @include grid-columns($sm-col: 1fr 1fr, $md-col: 1fr, $lg-col: 1fr 1fr, $xlg-col: 1fr 1fr);
+
+    @media print {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.experience-container,
+.education-container {
+  @include grid-columns($md-col: .2fr .8fr, $lg-col: .2fr .8fr, $xlg-col: .2fr .8fr);
+
+  @media print {
+    grid-template-columns: .2fr .8fr; 
+  }
+}
+
+.experience-container {
+  padding-bottom: $padding-lg;
+  margin-bottom: $margin-lg;
+  border-bottom: .5px solid var(--color-hr);
+
+  &:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+  }
+}

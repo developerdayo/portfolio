@@ -1,0 +1,24 @@
+@import '../variables/_variables.spacing.module';
+@import '../variables/variables.breakpoints.module';
+
+@mixin grid-columns($xs-col: 1fr, $sm-col: 1fr, $md-col: 1fr 1fr, $lg-col: 1fr 1fr, $xlg-col: 1fr 1fr 1fr, $gap: $padding-md) {
+  display: grid;
+  grid-template-columns: $xs-col;
+  column-gap: $gap;
+
+  @media #{$smUp} {
+    grid-template-columns: $sm-col;
+  }
+
+  @media #{$mdUp} {
+    grid-template-columns: $md-col;
+  }
+
+  @media #{$lgUp} {
+    grid-template-columns: $lg-col;
+  }
+
+  @media #{$xlgUp} {
+    grid-template-columns: $xlg-col;
+  }
+}

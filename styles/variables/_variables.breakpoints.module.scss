@@ -18,6 +18,7 @@ $xsOnly: "#{$screen} and (max-width: #{upper-bound($xsRange)})" !default;
 
 $smUp: "#{$screen} and (min-width: #{lower-bound($smRange)})" !default;
 $smOnly: "#{$screen} and (min-width: #{lower-bound($smRange)}) and (max-width: #{upper-bound($smRange)})" !default;
+$smMax: "#{$screen} and (max-width: #{upper-bound($smRange)})" !default;
 
 $mdUp: "#{$screen} and (min-width: #{lower-bound($mdRange)})" !default;
 $mdOnly: "#{$screen} and (min-width: #{lower-bound($mdRange)}) and (max-width: #{upper-bound($mdRange)})" !default;

@@ -72,6 +72,12 @@ function MyApp( pageProps: AppProps) {
           margin: 0;
         }
 
+        @media print {
+          body {
+            position: unset;
+          }
+        }
+
         .bg {
           position: fixed;
           top: -50%;
@@ -88,6 +94,10 @@ function MyApp( pageProps: AppProps) {
           pointer-events: none;
           visibility: visible;
           z-index: var(--z-index-background-0);
+
+          @media print {
+            background: transparent;
+          }
         }
 
         @keyframes bg-animation {

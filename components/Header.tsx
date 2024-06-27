@@ -21,7 +21,9 @@ export default function Nav({children}: Props) {
           <Link href="/">sarah ferguson</Link>
         </h1>
         <span className={helpers['block']}>software developer | 🗽 NYC</span>
-        <span className={helpers['block']}><Link href="https://github.com/developerdayo" target="_blank">github.com/developerdayo</Link></span>
+        <span className={`${helpers['block']} ${helpers['print-hidden']}`}><Link href="https://github.com/developerdayo" target="_blank">github.com/developerdayo</Link></span>
+        <span className={helpers['print-visible']} aria-hidden="true">developerdayo.github.io/portfolio</span>
+        <span className={helpers['print-visible']} aria-hidden="true">sarah.an.ferguson@gmail.com</span>
       </div>
       {children}
       {router.pathname === '/' ? (

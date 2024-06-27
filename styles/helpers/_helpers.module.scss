@@ -45,64 +45,10 @@
   @include heading('md');
 }
 
-.xs-50 {
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    @include width(50%, $padding-sm);
-  }
-}
-
-.sm-25 {
-  @media #{$smUp} {
-    @include width(25%, $padding-sm);
-  }
-}
-
-.sm-50 {
-  @media #{$smUp} {
-    @include width(50%, $padding-sm);
-  }
-}
-
-.sm-75 {
-  @media #{$smUp} {
-    @include width(75%, $padding-sm);
-  }
-}
-
-.sm-100 {
-  @media #{$smUp} {
-    width: 100%;
-  }
-}
-
-.md-25 {
-  @media #{$mdUp} {
-    @include width(25%, $padding-sm);
-  }
-}
-
-.md-33 {
-  @media #{$mdUp} {
-    @include width(33%, $padding-sm);
-  }
-}
-
-.md-75 {
-  @media #{$mdUp} {
-    @include width(75%, $padding-sm);
-  }
-}
-
 .divide {
   padding-bottom: $padding-lg;
   margin-bottom: $margin-lg;
   border-bottom: .5px solid var(--color-hr);
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: $padding-sm;
 }
 
 .grid {
@@ -111,5 +57,32 @@
   &--2-col {
     grid-template-columns: 1fr 1fr;
     column-gap: $padding-md;
+  }
+
+  &--3-col {
+    column-gap: $padding-sm;
+    grid-template-columns: 1fr;
+
+    @media #{$mdUp} {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media #{$smUp} {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.print-visible {
+  display: none;
+
+  @media print {
+    display: unset;
+  }
+}
+
+.print-hidden {
+  @media print {
+    display: none;
   }
 }

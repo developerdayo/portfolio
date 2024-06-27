@@ -18,8 +18,15 @@
   overflow-y: scroll;
   transition: color var(--timing-forefront) $easeInOut, background-color var(--timing-forefront) $easeInOut;
 
+  @media print {
+    height: 100%;
+    background: $gray;
+    overflow-x: scroll;
+    animation: unset;
+  }
+
   @media #{$smUp} {
-    height: calc(100vh - ($padding-lg * $multiply));
+    height: calc(100vh - ($padding-lg * 3));
     width: calc(100vw - ($padding-lg * $multiply));
     margin: $margin-lg;
     padding: $padding-lg;
