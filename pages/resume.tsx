@@ -26,45 +26,57 @@ export default function firstChallenge() {
                     <div>
                       <h3>Technology</h3>
                       <ul>
-                        <li>HTML</li>
-                        <li>CSS/SCSS/Less</li>
-                        <li>GIT</li>
+                        <li>HTML5</li>
                         <li>Javascript</li>
                         <li>Typescript</li>
-                        <li>Webpack / Gulp / Grunt</li>
                         <li>Node.js</li>
                         <li>Next.js</li>
+                        <li>Linters (Eslint, StyleLInt)</li>
+                        <li>Webpack / Gulp / Grunt</li>
+                        <li>Docker</li>
+                        <li>Github Actions</li>
                         <li>Jest</li>
+                        <li>RESTful API</li>
+                        <li>Source Control (Git, Github, AWS Codecommit, Azure DevOps, GitLab)</li>
+                        <li>.NET</li>
+                        <li>Java</li>
+                        <li>PostgreSQL</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3>UI</h3>
+                      <ul>
+                        <li>CSS / SCSS / Less</li>
                         <li>React.js</li>
                         <li>Redux.js</li>
                         <li>Vue.js</li>
                         <li>Vuex</li>
-                        <li>Docker</li>
-                        <li>PostgreSQL</li>
                         <li>Material-UI</li>
+                        <li>Bootstrap</li>
                         <li>Shopify Liquid</li>
+                        <li>Twig</li>
+                        <li>Figma</li>
                       </ul>
                     </div>
                     <div>
                       <h3>Platforms</h3>
                       <ul>
                         <li>Adobe Experience Manager</li>
-                        <li>Shopify</li>
+                        <li>DotNetNuke</li>
                         <li>Drupal</li>
+                        <li>Shopify</li>
                         <li>Sitecore</li>
                         <li>Wordpress</li>
-                        <li>DotNetNuke</li>
                       </ul>
                     </div>
                     <div>
-                      <h3>Practices</h3>
+                      <h3>Misc</h3>
                       <ul>
+                        <li>DevOps</li>
+                        <li>Design Systems</li>
                         <li>Web Accessibility Implementation & Testing (WCAG 2.0)</li>
                         <li>Section 508 Compliance</li>
-                        <li>Personal Identifiable Information Security / GDPR / CCPA Compliance</li>
-                        <li>Cookie Consent Implementation</li>
-                        <li>Design Systems</li>
-                        <li>CI/CD</li>
+                        <li>GDPR / CCPA Compliance</li>
                       </ul>
                     </div>
                   </div>
@@ -81,7 +93,38 @@ export default function firstChallenge() {
                     </div>
                     <div>
                       <h4>Senior Software Developer/Consultant</h4>
-                      <p className={global['xs']}>As a software developer and consultant, I collaborate with client project teams on large-scale initiatives. I specialize in creating web solutions in both coupled and decoupled Adobe Experience Manager systems environments (along with other CMS platforms), tailoring the front-end stack to project requirements, frequently leveraging React.js or Vue.js. Beyond development, I contribute in various capacities including Personal Privacy expertise, Project Solution Ownership, and design system architecture consultation.</p>
+                      <h5>Nestle</h5>
+                      <ul>
+                        <li>Rapidly adapted frontend skills to Shopify, meeting high team demands and quickly contributing to the project.</li>
+                        <li>Supported the transition of a project to ReactJS apps and refactored major vanilla JS code, eliminating outdated jQuery.</li>
+                        <li>Modernized the codebase by converting vanilla CSS to SCSS, adding code linting, JS modules, and Husky for pre-commit code quality.</li>
+                        <li>Assisted in planning and establishing dev and staging environments, improving workflow and deployment processes.</li>
+                        <li>Translated functional requriements into technical documentation in confluence.</li>
+                        <li>Wrote and maintained extensive developer documentation and performed code reviews to ensure code quality and consistency.</li>
+                      </ul>
+                      <h5>Amazon AWS</h5>
+                      <ul>
+                        <li>Acted as the main contributor for a React-based repository decoupled from Adobe Experience Manager.</li>
+                        <li>Developed and maintained high-quality, reusable components for seamless integration with AEM.</li>
+                        <li>Implemented comprehensive unit tests to ensure code reliability and functionality.</li>
+                        <li>Achieved and maintained a minimum of 80% code coverage, ensuring robust application performance.</li>
+                        <li>Collaborated with cross-functional teams to deliver features and enhancements in an agile environment.</li>
+                        <li>Performed code reviews within different repo’s within the team.</li>
+                      </ul>
+                      <h5>Moody’s</h5>
+                      <ul>
+                        <li>Developed a comprehensive design system for a new web design, ensuring consistency and scalability.</li>
+                        <li>Wrote and collaborated closely with the development team to align on technical specifications and architectural requirements.</li>
+                        <li>Architected the system design to facilitate seamless integration and future enhancements.</li>
+                        <li>Created reusable components and design patterns, improving efficiency and code maintainability.</li>
+                        <li>Ensured the design system adhered to best practices and met all user experience standards.</li>
+                      </ul>
+                      <h5>Cepheid</h5>
+                      <ul>
+                        <li>Assisted in building a Vue.js application with Vuex for a healthcare client during the COVID pandemic to deliver the application under a tight deadline to facilitate the sale of COVID testing machines.</li>
+                        <li>Collaborated effectively with the team to rapidly develop and deploy critical features.</li>
+                        <li>Contributed to maintaining code quality and stability under challenging circumstances and a team under high demand.</li>
+                      </ul>
                     </div>
                   </div>
                   <div className={Resume['experience-container']}>
@@ -91,7 +134,25 @@ export default function firstChallenge() {
                     </div>
                     <div>
                       <h4>Lead Developer</h4>
-                      <p className={global['xs']}>Developed and designed a number of programs and rituals across the front-end and back-end team including: 360 code reviews, regular knowledge sharing brown bags, internal wikis containing project information and case studies, project frameworks/boilerplates and scaffolding tools, command line tools to automate and circumvent errors working with complex git workflows, npm packages, daily scrums with rotating scrum leaders, and conducted bi-annual and annual reviews. I assisted with reviewing Scope of Work proposals and requirements and designed a system for breaking out comprehensive development tasks into issue tracking tools. I built and managed a mixed team of full-time and remote front-end developers including team members in different time zones and countries. I assisted each team member with improving weak points in skill-sets and honing in on their strengths. I helped team members develop leadership skills and gave opportunities to exercise them to become an increasingly efficient and skillful team.</p>
+                      <ul>
+                      <li>Led development and performed as technical architect on projects involving coupled/decoupled Drupal with ReactJS.</li>
+                      <li>Developed and instituted programs including:</li>
+                        <ul>
+                          <li>360 code reviews</li>
+                          <li>Regular knowledge-sharing brown bags</li>
+                          <li>Internal wikis with project information and case studies</li>
+                          <li>Project frameworks, boilerplates, and scaffolding tools</li>
+                          <li>Command line tools to automate and avoid errors in complex git workflows</li>
+                          <li>NPM packages for streamlined development</li>
+                          <li>Daily scrums with rotating scrum leaders</li>
+                          <li>Bi-annual and annual reviews</li>
+                        </ul>
+                      <li>Assisted in reviewing Scope of Work proposals and requirements.</li>
+                      <li>Designed systems for breaking down comprehensive development tasks into issue tracking tools.</li>
+                      <li>Built and managed a mixed team of full-time and remote front-end developers across different time zones and countries.</li>
+                      <li>Mentored team members to improve skills, capitalize on strengths, and develop leadership abilities.</li>
+                      <li>Fostered an environment of continuous improvement, leading to an increasingly efficient and skillful team.</li>
+                      </ul>
                     </div>
                   </div>
                   <div className={Resume['experience-container']}>
