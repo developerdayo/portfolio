@@ -99,7 +99,7 @@ export default function firstChallenge() {
                         <li>Supported the transition of a project to ReactJS apps and refactored major vanilla JS code, eliminating outdated jQuery.</li>
                         <li>Modernized the codebase by converting vanilla CSS to SCSS, adding code linting, JS modules, and Husky for pre-commit code quality.</li>
                         <li>Assisted in planning and establishing dev and staging environments, improving workflow and deployment processes.</li>
-                        <li>Translated functional requriements into technical documentation in confluence.</li>
+                        <li>Translated functional requirements into technical documentation in confluence.</li>
                         <li>Wrote and maintained extensive developer documentation and performed code reviews to ensure code quality and consistency.</li>
                       </ul>
                       <h5>Amazon AWS</h5>
