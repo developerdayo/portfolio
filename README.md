@@ -11,9 +11,9 @@ In this demo, I address common cross-team and inter-team challenges that I've en
 This design token package provides a system to manage and use design variables (such as colors, typography, spacing, breakpoints, etc.) in a consistent and scalable way across projects. It converts a JSON file containing design tokens into SCSS variables and maps, allowing the tokens to be consumed directly in your SCSS files.
 
 Current Features:
-Typography: Includes font families, sizes, weights, and line heights that can be applied consistently across components using predefined SCSS mixins.
-Colors: Provides easy access to color variables through maps for different contexts (e.g., primary, secondary, tertiary colors).
-Spacing & Breakpoints: Offers consistent padding, margin, and responsive breakpoints, ensuring a uniform layout system.
+* **Typography:** Includes font families, sizes, weights, and line heights that can be applied consistently across components using predefined SCSS mixins.
+* **Colors:** Provides easy access to color variables through maps for different contexts (e.g., primary, secondary, tertiary colors).
+* **Spacing & Breakpoints:** Offers consistent padding, margin, and responsive breakpoints, ensuring a uniform layout system.
 
 ### Usage
 1. The package is already installed via npm `npm install @sferguson9670/portfolio-design-tokens`
@@ -27,10 +27,52 @@ Spacing & Breakpoints: Offers consistent padding, margin, and responsive breakpo
 * For colors: map-get($colors, text, primary)
 
 4. Use prebuilt mixins to apply typography, font sizes, and responsive layouts:
+For example, let's our token json file contains these rules:
 ```
-@include font(bold);
-@include font-size(medium);
+{
+  "typography": {
+    "fontFamily": {
+      "primary": {
+        "name": "'Raleway', sans-serif",
+        "fontWeight": {
+          "light": "100",
+          "regular": "400",
+          "medium": "500",
+          "bold": "700"
+        }
+      }
+    },
+    ...
+    "heading": {
+        "medium": {
+            "fontWeight": "700",
+            "fontSize": "30px",
+            "lineHeight": "35px"
+        }
+    }
+}
 ```
+
+and we have a mixin defined (in _mixins.font.module.scss) called `@mixin heading()` which accepts a $size argument. We can easily apply this to a selector like:
+```
+h3 {
+    @include heading(medium)
+}
+```
+
+and the output css will be:
+```
+h3 {
+    font-family: 'Raleway', sans-serif';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+}
+```
+
+Awesome. You don't have to think so hard about whether or not you grabbed all of the correct properties from designs as all of the rules determined by the design have been setup already.
+
+As well, let's say that we havee switched from the font-family 'Raleway' to 'Times New Roman' with different fallback fonts. If the design token json file is updated to reflect that and the npm package is pushed with a new version, developers can selectively get the latest version in their own code repo.
 
 ## Units - REM & PX
 ### Font size
