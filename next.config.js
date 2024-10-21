@@ -22,4 +22,5 @@ module.exports = {
     path: 'https://developdayo.imgix.net',
   },
   output: 'export',
+  trailingSlash: true
 };
