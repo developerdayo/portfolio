@@ -1,34 +1,30 @@
-@import '../variables/variables.breakpoints.module';
-@import '../variables/variables.color.module';
-@import '../variables/variables.easing.module';
-@import '../variables/_variables.spacing.module';
+@import '../includes';
 
 .container {
   width: 100%;
-//  padding: $padding-md;
 }
 
 .small {
-  @media #{$smUp} {
+  @media #{$smallUp} {
     width: 50vw;
   }
 }
 
 .large {
-  @media #{$smUp} {
-    width: calc(100vw - ($padding-md-1 * 8));
+  @media #{$smallUp} {
+    width: calc(100vw - 200px);
   }
 }
 
 .content {
   position: relative;
-  padding: $padding-lg-1 $padding-md $padding-xlg;
+  padding: map-get($spacing, xLarge) map-get($spacing, medium) map-get($spacing, xXLarge);
   background-color: var(--color-background-translucent);
-  transition: background-color var(--timing-background) $easeInOut;
+  transition: background-color var(--timing-background) ease-in-out;
   z-index: var(--z-index-background-0);
 
   p {
-    margin-top: $margin-sm;
+    margin-top: map-get($spacing, small);
   }
 }
 
@@ -43,7 +39,7 @@
   transform: translate(-50%, -50%);
   z-index: var(--z-index-background-1);
 
-  @media #{$smUp} {
+  @media #{$smallUp} {
     animation: none;
   }
 }

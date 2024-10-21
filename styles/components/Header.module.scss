@@ -1,31 +1,22 @@
-// variables
-@import '../variables/variables.easing.module';
-@import '../variables/variables.breakpoints.module';
-@import '../variables/variables.color.module';
-@import '../variables/variables.spacing.module';
-
-// mixins
-@import '../mixins/_mixins.font.module.scss';
-@import '../mixins/mixins.icons.module';
-@import '../mixins/mixins.links.module';
+@import '../includes';
 
 .box {
   position: relative;
   width: 100%;
-  padding: $padding-md;
+  padding: map-get($spacing, medium);
   align-items: center;
   background-color: var(--color-background-translucent);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  transition: background-color var(--timing-background) $easeInOut;
+  transition: background-color var(--timing-background) ease-in-out;
   z-index: var(--z-index-background-0);
 
-  @media #{$smUp} {
+  @media #{$smallUp} {
     width: 50vw;
   }
 
-  @media #{$mdUp} {
+  @media #{$mediumUp} {
     width: 30vw;
   }
 
@@ -34,6 +25,7 @@
   }
 
   a {
+    @include font-size(xxSmall);
     @include underline;
   }
 }
@@ -41,7 +33,7 @@
 .container {
   height: 100%;
   display: flex;
-  gap: 25px;
+  gap: map-get($spacing, xSmall);
   flex-direction: column;
   justify-content: center;
 }
@@ -50,12 +42,12 @@
   position: relative;
   height: 35px;
 
-  a  {
-    @include font-30();
-    @include font('md');
+  a {
+    @include font-size(xxLarge);
+    @include font(medium);
     position: absolute;
     top: 0;
-    transition: top var(--timing-background) $easeInOut;
+    transition: top var(--timing-background) ease-in-out;
   
     &:hover {
       top: -5px;

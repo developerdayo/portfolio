@@ -21,10 +21,10 @@ const Menu = () => {
         <li><Link onClick={(e) => handleClick('/about-me', e)} href="/about-me">about me</Link></li>
         <li><Link onClick={(e) => handleClick('/resume', e)} href="/resume">resume</Link></li>
         <li><Link onClick={(e) => handleClick('mailto:sarah.an.ferguson@gmail.com', e)} href="mailto:sarah.an.ferguson@gmail.com">contact</Link></li>
-        <li className={`${styles['li-absolute']} ${styles['li-absolute-top']}`}>
+        <li className={styles.linkedin}>
           <Link href="https://www.linkedin.com/in/sarah-ferguson-22167016/" target="_blank">linkedin</Link>
         </li>
-        <li className={styles['li-absolute']}>
+        <li className={styles['theme-controls']}>
           <Toggle selectors={styles['light-mode']} text="light" /> | <Toggle selectors={styles['dark-mode']} text="dark" />
         </li>
       </ol>

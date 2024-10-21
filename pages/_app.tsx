@@ -6,7 +6,6 @@ import PageWithTransition from '../components/PageWithTransition';
 
 // styles
 import colors from '../styles/variables/_variables.color.module.scss';
-import easing from '../styles/variables/_variables.easing.module.scss';
 
 function MyApp( pageProps: AppProps) {
   return (
@@ -37,7 +36,7 @@ function MyApp( pageProps: AppProps) {
           --color-background: ${colors['offBlack']};
           --color-background-translucent: rgb(34, 35, 35, .95);
           --color-hr: ${colors['lightGray']};
-          --color-theme-interior-text: ${colors['white']};
+          --color-theme-interior-text: '${colors['white']}';
           --color-link-style-background: ${colors['gray']};
           --color-link-style-background-hov: ${colors['gray']};
           --color-link-style-text: ${colors['lightGray']};
@@ -63,8 +62,9 @@ function MyApp( pageProps: AppProps) {
           padding: 0;
           background-color: var(--color-background);
           height: 100vh;
+          font-size: 16px;
           letter-spacing: 1px;
-          transition: background-color var(--timing-background) ${easing['easeInOut']};
+          transition: background-color var(--timing-background) ease-in-out};
         }
 
         body {

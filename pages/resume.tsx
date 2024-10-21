@@ -162,7 +162,7 @@ export default function firstChallenge() {
                     </div>
                     <div>
                       <h4>Front-end Developer</h4>
-                      <p className={global['xs']}>Created responsive websites and intranets across numerous CMS and HTML/CSS animated advertisements. Worked on a team of front-end developers and followed strict standards for efficient web development.</p>
+                      <p className={global['xSmall']}>Created responsive websites and intranets across numerous CMS and HTML/CSS animated advertisements. Worked on a team of front-end developers and followed strict standards for efficient web development.</p>
                     </div>
                   </div>
                   <div className={Resume['experience-container']}>
@@ -172,7 +172,7 @@ export default function firstChallenge() {
                     </div>
                     <div>
                       <h4>Front-end Developer/Designer</h4>
-                      <p className={global['xs']}>Developed and maintained the company website using HTML, CSS, and JavaScript. Designed and established the company&apos;s brand and identity. Monitored web analytics and reported insights to the CEO and content team. Led creative initiatives for web, print, and radio advertisements. Collaborated with the development team to create a custom CRM solution.</p>
+                      <p className={global['xSmall']}>Developed and maintained the company website using HTML, CSS, and JavaScript. Designed and established the company&apos;s brand and identity. Monitored web analytics and reported insights to the CEO and content team. Led creative initiatives for web, print, and radio advertisements. Collaborated with the development team to create a custom CRM solution.</p>
                     </div>
                   </div>
                   <div className={Resume['experience-container']}>
@@ -182,7 +182,7 @@ export default function firstChallenge() {
                     </div>
                     <div>
                       <h4>Front-end Developer/Designer</h4>
-                      <p className={global['xs']}>Designed, developed, and managed content for the static company website utilizing HTML and CSS. Aided creative team in brand and identity efforts.</p>
+                      <p className={global['xSmall']}>Designed, developed, and managed content for the static company website utilizing HTML and CSS. Aided creative team in brand and identity efforts.</p>
                     </div>
                   </div>
                 </>
@@ -198,7 +198,7 @@ export default function firstChallenge() {
                     </div>
                     <div>
                       <h4>Master Certification, Web Development & Design</h4>
-                      <p className={global['xs']}>Master Certification, Web Development & Design</p>
+                      <p className={global['xSmall']}>Master Certification, Web Development & Design</p>
                     </div>
                   </div>
                 </>

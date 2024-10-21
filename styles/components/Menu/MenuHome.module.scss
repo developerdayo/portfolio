@@ -1,0 +1,54 @@
+@import '../../includes';
+
+// home styles
+.home {
+    .dark-mode {
+      color: map-get($colors, text, tertiary);
+      font-weight: 600;
+    }
+  
+    .linkedin,
+    .theme-controls {
+      position: fixed;
+      right: calc(map-get($spacing, medium) + map-get($spacing, medium));
+      bottom: 60px;
+      color: var(--color-text-primary);
+  
+      @media #{$smallUp} {
+        right: calc(map-get($spacing, large) + map-get($spacing, large));
+        bottom: 100px;
+      }
+  
+      &-top {
+        bottom: 100px;
+  
+        @media #{$smallUp} {
+          bottom: 140px;
+        }
+      }
+    }
+  
+    .linkedin a,
+    .theme-controls a,
+    .linkedin::before,
+    .theme-controls::before {
+      color: white;
+    }
+  
+    .linkedin {
+      @include font-size(xxSmall);
+      bottom: 100px;
+
+      @media #{$smallUp} {
+        bottom: 140px;
+      }
+    }
+  
+    .light-mode {
+      color: map-get($colors, text, highlight);
+    }
+  
+    .light-mode:disabled::after {
+      @include flashlight-on;
+    }
+  }

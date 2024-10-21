@@ -1,13 +1,4 @@
-// variables
-@import '../variables/variables.breakpoints.module';
-@import '../variables/variables.color.module';
-@import '../variables/variables.easing.module';
-@import '../variables/_variables.spacing.module';
-
-// mixins
-@import '../mixins/_mixins.font.module';
-@import '../mixins/mixins.links.module';
-@import '../mixins/mixins.width.module';
+@import '../includes.scss';
 
 .block {
   display: block;
@@ -16,7 +7,7 @@
 .container {
   // height: 100%;
   width: 100%;
-  @media #{mdUp} {
+  @media #{$mediumUp} {
     width: 50vw;
   }
 }
@@ -33,21 +24,21 @@
   display: inline-block;
 }
 
-.title-xs {
-  @include heading('xs');
+.title-xSmall {
+  @include heading(xSmall);
 }
 
-.title-sm {
-  @include heading('sm');
+.title-small {
+  @include heading(small);
 }
 
-.title-md {
-  @include heading('md');
+.title-medium {
+  @include heading(medium);
 }
 
 .divide {
-  padding-bottom: $padding-lg;
-  margin-bottom: $margin-lg;
+  padding-bottom: map-get($spacing, large);
+  margin-bottom: map-get($spacing, large);
   border-bottom: .5px solid var(--color-hr);
 }
 

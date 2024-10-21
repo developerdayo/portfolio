@@ -1,5 +1,4 @@
 @import '../variables/variables.color.module';
-@import '../variables/variables.easing.module';
 
 @mixin underline($initTextColor: default) {
 
@@ -23,7 +22,7 @@
     height: 2px;
     content: '';
     pointer-events: none;
-    transition: var(--timing-forefront) $easeOut;
+    transition: var(--timing-forefront) ease-out;
     z-index: var(--z-index-background-2);
   }
 
@@ -33,10 +32,10 @@
   }
 
   &:hover {
-    animation: .75s $easeOut 100ms forwards link;
+    animation: .75s ease-out 100ms forwards link;
 
     &::after {
-      animation: .5s $easeOut 100.25ms forwards link-after;
+      animation: .5s ease-out 100.25ms forwards link-after;
       background-color: var(--color-link-style-background-hov);
     }
   }

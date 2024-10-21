@@ -1,36 +1,26 @@
+@use "sass:map";
 @import '../functions/functions.ranges';
+@import 'node_modules/@sferguson9670/portfolio-design-tokens/dist/design-tokens.scss';
 
-$xs: 480px !default;
-$sm: 768px !default;
-$md: 980px !default;
-$lg: 1200px !default;
-
-$xsRange: (0, $xs) !default;
-$smRange: ($sm + 1, $sm) !default;
-$mdRange: ($md + 1, $md - 1) !default;
-$lgRange: ($lg + 1, $lg - 1) !default;
-$xlgRange: ($lg, 999999) !default;
+$xSmallRange: (0, map-get($breakpoints, widths, xSmall)) !default;
+$smallRange: (map-get($breakpoints, widths, small) + 1, map-get($breakpoints, widths, small)) !default;
+$mediumRange: (map-get($breakpoints, widths, medium) + 1, map-get($breakpoints, widths, medium) - 1) !default;
+$largeRange: (map-get($breakpoints, widths, large) + 1, map-get($breakpoints, widths, large) - 1) !default;
+$xLargeRange: (map-get($breakpoints, widths, large), 999999) !default;
 
 $screen: 'only screen' !default;
 
-$xsUp: $screen !default;
-$xsOnly: "#{$screen} and (max-width: #{upper-bound($xsRange)})" !default;
+$xSmallUp: $screen !default;
+$xSmallOnly: "#{$screen} and (max-width: #{upper-bound($xSmallRange)})" !default;
 
-$smUp: "#{$screen} and (min-width: #{lower-bound($smRange)})" !default;
-$smOnly: "#{$screen} and (min-width: #{lower-bound($smRange)}) and (max-width: #{upper-bound($smRange)})" !default;
-$smMax: "#{$screen} and (max-width: #{upper-bound($smRange)})" !default;
+$smallUp: "#{$screen} and (min-width: #{lower-bound($smallRange)})" !default;
+$smallOnly: "#{$screen} and (min-width: #{lower-bound($smallRange)}) and (max-width: #{upper-bound($smallRange)})" !default;
+$smallMax: "#{$screen} and (max-width: #{upper-bound($smallRange)})" !default;
 
-$mdUp: "#{$screen} and (min-width: #{lower-bound($mdRange)})" !default;
-$mdOnly: "#{$screen} and (min-width: #{lower-bound($mdRange)}) and (max-width: #{upper-bound($mdRange)})" !default;
+$mediumUp: "#{$screen} and (min-width: #{lower-bound($mediumRange)})" !default;
+$mediumOnly: "#{$screen} and (min-width: #{lower-bound($mediumRange)}) and (max-width: #{upper-bound($mediumRange)})" !default;
 
-$lgUp: "#{$screen} and (min-width: #{lower-bound($lgRange)})" !default;
-$lgOnly: "#{$screen} and (min-width: #{lower-bound($lgRange)}) and (max-width: #{upper-bound($lgRange)})" !default;
+$largeUp: "#{$screen} and (min-width: #{lower-bound($largeRange)})" !default;
+$largeOnly: "#{$screen} and (min-width: #{lower-bound($largeRange)}) and (max-width: #{upper-bound($largeRange)})" !default;
 
-$xlgUp: "#{$screen} and (min-width: #{lower-bound($xlgRange)})" !default;
-
-:export {
-  xs: $xs;
-  sm: $sm;
-  md: $md;
-  lg: $lg;
-}
+$xLargeUp: "#{$screen} and (min-width: #{lower-bound($xLargeRange)})" !default;

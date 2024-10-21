@@ -1,219 +1,121 @@
-@import '../variables/variables.spacing.module';
-
-/* latin-ext */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-$html-font-size: 16px;
+@use "sass:map";
+@import '~@sferguson9670/portfolio-design-tokens/dist/design-tokens.scss';
 
 @function stripUnit($value) {
-    @return $value / ($value * 0 + 1);
+  @return $value / ($value * 0 + 1);
 }
+
 @function rem($pxValue) {
-    @return #{stripUnit($pxValue) / stripUnit(16px)}rem;
+  @return #{stripUnit($pxValue) / stripUnit(16px)}rem;
 }
 
 // fonts
-@mixin font($weight: rg) {
-  font-family: 'Raleway', sans-serif;
-  @if ($weight == lt) {
-    font-weight: 100;    
+@mixin font($weight: regular) {
+  font-family: unquote(map-get($typography, fontFamily, primary, name));
+  
+  @if ($weight == light) {
+    font-weight: map-get($typography, fontFamily, primary, fontWeight, light);    
   }
-  @if ($weight == rg) {
-    font-weight: 400;    
+  @if ($weight == regular) {
+    font-weight: map-get($typography, fontFamily, primary, fontWeight, regular);    
   }
-  @if ($weight == md) {
-    font-weight: 500;    
+  @if ($weight == medium) {
+    font-weight: map-get($typography, fontFamily, primary, fontWeight, medium);    
   }
-  @if ($weight == b) {
-    font-weight: 700;    
+  @if ($weight == bold) {
+    font-weight: map-get($typography, fontFamily, primary, fontWeight, bold);    
   }
 }
 
-@mixin font-10 {
-  font-size: rem(10px);
-  line-height: rem(22px);
-}
-
-@mixin font-14 {
-  font-size: rem(14px);
-  line-height: rem(28px);
-}
-
-@mixin font-16 {
-  font-size: rem(16px);
-  line-height: rem(26px);
-}
-
-@mixin font-18 {
-  font-size: rem(18px);
-  line-height: rem(26px);
-}
-
-@mixin font-20 {
-  font-size: rem(20px);
-  line-height: rem(28px);
-}
-
-// in cta aside, see the 24/26 pairing but in heading definitions, we see 24/32 pairing.
-@mixin font-24 {
-  font-size: rem(24px);
-  line-height: rem(32px);
-}
-
-@mixin font-26 {
-  font-size: rem(26px);
-  line-height: rem(34px);
-}
-
-@mixin font-30 {
-  font-size: rem(30px);
-  line-height: rem(35px);
-}
-
-@mixin font-40 {
-  font-size: rem(40px);
-  line-height: rem(50px);
-}
-
-@mixin font-50 {
-  font-size: rem(50px);
-  line-height: rem(50px);
+// Font size mixin
+@mixin font-size($size) {
+  @if $size == xxxSmall {
+    font-size: rem(map-get($typography, fontSize, font10, size));
+    line-height: rem(map-get($typography, fontSize, font10, lineHeight));
+  }
+  @else if $size == xxSmall {
+    font-size: rem(map-get($typography, fontSize, font14, size));
+    line-height: rem(map-get($typography, fontSize, font14, lineHeight));
+  }
+  @else if $size == xSmall {
+    font-size: rem(map-get($typography, fontSize, font16, size));
+    line-height: rem(map-get($typography, fontSize, font16, lineHeight));
+  }
+  @else if $size == small {
+    font-size: rem(map-get($typography, fontSize, font18, size));
+    line-height: rem(map-get($typography, fontSize, font18, lineHeight));
+  }
+  @else if $size == medium {
+    font-size: rem(map-get($typography, fontSize, font20, size));
+    line-height: rem(map-get($typography, fontSize, font20, lineHeight));
+  }
+  @else if $size == large {
+    font-size: rem(map-get($typography, fontSize, font24, size));
+    line-height: rem(map-get($typography, fontSize, font24, lineHeight));
+  }
+  @else if $size == xLarge {
+    font-size: rem(map-get($typography, fontSize, font26, size));
+    line-height: rem(map-get($typography, fontSize, font26, lineHeight));
+  }
+  @else if $size == xxLarge {
+    font-size: rem(map-get($typography, fontSize, font30, size));
+    line-height: rem(map-get($typography, fontSize, font30, lineHeight));
+  }
+  @else if $size == xxxLarge {
+    font-size: rem(map-get($typography, fontSize, font40, size));
+    line-height: rem(map-get($typography, fontSize, font40, lineHeight));
+  }
+  @else if $size == xxxxLarge {
+    font-size: rem(map-get($typography, fontSize, font50, size));
+    line-height: rem(map-get($typography, fontSize, font50, lineHeight));
+  }
 }
 
 // heading sizes
-@mixin heading($size: md) {
-  @if ($size == xxs) {
-    @include font(md);
-    @include font-18;
-    font-weight: 600;
+@mixin heading($size: medium) {
+  @if ($size == xxxSmall) {
+    @include font(map-get($headings, xxxSmall, fontWeight));
+    @include font-size(xxxSmall);
   }
-  @if ($size == xs) {
-    @include font(md);
-    @include font-20;
-    margin-bottom: $margin-xxs;
+  @if ($size == xxSmall) {
+    @include font(map-get($headings, xxSmall, fontWeight));
+    @include font-size(xxSmall);
+    margin-bottom: rem(map-get($spacing, xxSmall));
   }
-  @if ($size == sm) {
-    @include font(b);
-    @include font-24; 
+  @if ($size == xSmall) {
+    @include font(map-get($headings, xSmall, fontWeight));
+    @include font-size(small);
   }
-  @if ($size == md) {
-    @include font(b);
-    @include font-30;
+  @if ($size == medium) {
+    @include font(map-get($headings, medium, fontWeight));
+    @include font-size(medium);
   }
-  @if ($size == lg) {
-    @include font(b);
-    @include font-40;
+  @if ($size == large) {
+    @include font(map-get($headings, large, fontWeight));
+    @include font-size(large);
   }
-  @if ($size == xl) {
-    @include font(b);
-    @include font-50;
+  @if ($size == xLarge) {
+    @include font(map-get($headings, xLarge, fontWeight));
+    @include font-size(xLarge);
   }
 }
 
 // paragraph sizes
-@mixin paragraph($size: md) {
-  @if ($size == xxxs) {
-    @include font(md);
-    @include font-10;
+@mixin paragraph($size: medium) {
+  @if ($size == xxxSmall) {
+    @include font(map-get($paragraphs, xxxSmall, fontWeight));
+    @include font-size(xxxSmall);
   }
-  @if ($size == xxs) {
-    @include font(rg);
-    @include font-14;
+  @if ($size == xxSmall) {
+    @include font(map-get($paragraphs, xxSmall, fontWeight));
+    @include font-size(xxSmall);
   }
-  @if ($size == xs) {
-    @include font(rg);
-    @include font-16;
+  @if ($size == xSmall) {
+    @include font(map-get($paragraphs, xSmall, fontWeight));
+    @include font-size(xSmall);
   }
-  @if ($size == md) {
-    @include font(rg);
-    @include font-18;
+  @if ($size == medium) {
+    @include font(map-get($paragraphs, medium, fontWeight));
+    @include font-size(medium);
   }
 }

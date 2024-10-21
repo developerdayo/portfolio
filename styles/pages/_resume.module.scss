@@ -1,13 +1,12 @@
 // variables
 @import '../variables/variables.color.module';
-@import '../variables/_variables.spacing.module';
 
 // mixins
 @import '../mixins/mixins.font.module';
 @import '../mixins/mixins.grid.module';
 
 .skills-container {
-  @include grid-columns($xs-col: 1fr 1fr, $sm-col: 1fr 1fr, $md-col: 1fr 1fr 1fr 1fr, $lg-col: 1fr 1fr 1fr 1fr, $xlg-col: 1fr 1fr 1fr 1fr);
+  @include grid-columns($xs-col: 1fr, $sm-col: 1fr 1fr, $md-col: 1fr 1fr 1fr 1fr, $lg-col: 1fr 1fr 1fr 1fr, $xlg-col: 1fr 1fr 1fr 1fr);
 
   @media print {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -30,8 +29,8 @@
 }
 
 .experience-container {
-  padding-bottom: $padding-lg;
-  margin-bottom: $margin-lg;
+  padding-bottom: map-get($spacing, large);
+  margin-bottom: map-get($spacing, large);
   border-bottom: .5px solid var(--color-hr);
 
   &:last-of-type {
@@ -41,11 +40,11 @@
   }
 
   h5 {
-    @include font-16;
+    @include font-size(xSmall);
   }
 
   ul {
-    margin-left: 15px;
+    margin-left: map-get($spacing, xSmall);
     list-style-type: disc;
   }
 }

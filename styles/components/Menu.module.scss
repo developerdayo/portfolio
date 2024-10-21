@@ -1,146 +1,6 @@
-// variables
-@import '../variables/variables.spacing.module';
-@import '../variables/variables.breakpoints.module';
-
-// mixins
-@import '../mixins/_mixins.font.module.scss';
-@import '../mixins/mixins.icons.module';
-@import '../mixins/mixins.links.module';
-
-.home {
-  .dark-mode {
-    color: $offBlack;
-    font-weight: 600;
-  }
-
-  .li-absolute {
-    position: fixed;
-    right: calc($margin-md + $padding-md);
-    bottom: calc($margin-md + $padding-md);
-    color: var(--color-text-primary);
-  
-    @media #{$smUp} {
-      right: calc($margin-lg + $padding-lg);
-      bottom: calc($margin-lg + $padding-lg);
-    }
-  
-    &-top {
-      bottom: calc($margin-md + $padding-md + 40px);
-  
-      @media #{$smUp} {
-        bottom: calc($margin-lg + $padding-lg + 40px);
-      }
-    }
-  }
-
-  .li-absolute a, .li-absolute::before {
-    color: var(--color-nav-text-primary);
-  }
-
-  .light-mode {
-    color: $white;
-  }
-
-  .light-mode:disabled::after {
-    @include flashlight-on;
-  }
-}
-
-.interior {
-  position: fixed;
-
-  @media print {
-    display: none;
-  }
-
-  @media #{$smUp} {
-    top: 93vh
-  }
-
-  @media #{$smMax} {
-    top: 2px;
-    left: 35px;
-  }
-
-  @media #{$smUp} {
-    bottom: 3px;
-  }
-
-  a {
-    @include underline;
-  }
-
-  li {
-    display: inline-block;
-    margin-right: 15px;
-  }
-
-  .dark-mode {
-    color: var(--color-theme-interior-text);
-  }
-
-  .dark-mode:hover::after {
-    @include flashlight-off(--var(--color-icon-interior));
-  }
-
-  .dark-mode:disabled::after {
-    [data-theme='dark'] & {
-      @include flashlight-off(white);
-    }
-
-    [data-theme='light'] & {
-      @include flashlight-off();
-    }
-  }
-
-  .li-absolute {
-    position: fixed;
-    right: 20px;
-    bottom: -3px;
-
-    @media #{$smUp} {
-      top: 93vh
-    }
-
-    @media #{$smUp} {
-      right: calc($margin-lg + $padding-lg);
-      bottom: 3px;
-    }
-  }
-
-  .li-absolute a, .li-absolute &::before {
-    color: var(--color-text-primary);
-  }
-
-  .li-absolute a {
-    [data-theme='light'] & {
-      @include underline();
-    }
-  }
-
-  .li-absolute-top {
-    bottom: -3px;
-    right: 150px;
-
-    @media #{$smUp} {
-      right: 230px;
-      bottom: 3px;
-    }
-  }
-
-  .menu {
-    position: fixed;
-    bottom: 0;
-  }
-
-  .light-mode {
-    color: var(--color-theme-interior-text);
-  }
-
-  .light-mode:disabled::after {
-    @include flashlight-on(black);
-  }
-}
+@import '../includes';
+@import 'Menu/MenuHome.module.scss';
+@import 'Menu/MenuInterior.module.scss';
 
 .dark-mode {
   &:disabled::after {
@@ -154,32 +14,43 @@
   }
 }
 
+.light-mode {
+  background-size: contain;
+  color: white;
+
+  &:hover::after {
+    @media (hover: hover) {
+      @include flashlight-on;
+    }
+  }
+}
+
 .light-mode, .dark-mode {
-  @include paragraph('xxs');
+  @include paragraph(xxSmall);
   position: relative;
   padding: 0;
   border: none;
   background-color: transparent;
-  transition: padding var(--timing-forefront) $easeOut;
+  transition: padding var(--timing-forefront) ease-out;
   z-index: var(--z-index-foreground-0);
 
   &:hover {
     @media (hover: hover) {
-      animation: .75s $easeOut 100ms forwards light-dark-mode-button;
+      animation: .75s ease-out 100ms forwards light-dark-mode-button;
       cursor: pointer;
-    
+
       &:disabled {
         cursor: default;
       }
-  
+
       &::after {
-        animation: .75s $easeOut 100ms forwards light-dark-mode-icon;
+        animation: .75s ease-out 100ms forwards light-dark-mode-icon;
       }
     }
   }
 
   &:disabled {
-    padding: 0 15px 0 0;
+    padding: 0 map-get($spacing, xSmall) 0 0;
     pointer-events: none;
 
     &::after {
@@ -198,18 +69,7 @@
     background-position: 100% 100%;
     content: '';
     opacity: 0;
-    transition: right var(--timing-forefront) $easeOut, opacity var(--timing-forefront) $easeOut, background-position var(--timing-forefront) $easeOut;
-  }
-}
-
-.light-mode {
-  background-size: contain;
-  color: $white;
-
-  &:hover::after {
-    @media (hover: hover) {
-      @include flashlight-on;
-    }
+    transition: right var(--timing-forefront) ease-out, opacity var(--timing-forefront) ease-out, background-position var(--timing-forefront) ease-out;
   }
 }
 
@@ -218,10 +78,10 @@
     padding-right: 0;
   }
   50% {
-    padding-right: 15px;
+    padding-right: map-get($spacing, xSmall);
   }
   100% {
-    padding-right: 15px;
+    padding-right: map-get($spacing, xSmall);
   }
 }
 

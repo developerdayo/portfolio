@@ -1,0 +1,100 @@
+@import '../../includes';
+
+.interior {
+    position: fixed;
+  
+    @media print {
+      display: none;
+    }
+  
+    @media #{$smallUp} {
+      top: 93vh;
+    }
+  
+    @media #{$smallMax} {
+      top: 2px;
+      left: 35px;
+    }
+  
+    @media #{$smallUp} {
+      bottom: 3px;
+    }
+  
+    a {
+      @include underline;
+    }
+  
+    li {
+      @include font-size(xxSmall);
+      display: inline-block;
+      margin-right: map-get($spacing, xSmall);
+    }
+  
+    .dark-mode {
+      color: var(--color-theme-interior-text);
+    }
+  
+    .dark-mode:hover::after {
+      @include flashlight-off(black);
+    }
+  
+    .dark-mode:disabled::after {
+      [data-theme='dark'] & {
+        @include flashlight-off(white);
+      }
+  
+      [data-theme='light'] & {
+        @include flashlight-off();
+      }
+    }
+  
+    .light-mode {
+      color: var(--color-theme-interior-text);
+    }
+  
+    .light-mode:disabled::after {
+      @include flashlight-on(black);
+    }
+
+    .linkedin,
+    .theme-controls {
+      position :fixed;
+      bottom: -3px;
+
+      @media #{$smallUp} {
+        top: 93vh;
+        right: 100px;
+        bottom: 3px;
+      }
+
+      a [data-theme='light'] & {
+        @include underline();
+      }
+    }
+
+    .linkedin {
+      @include font-size(xxSmall);
+      position: fixed;
+      right: 150px;
+      bottom: -3px;
+
+      @media #{$smallUp} {
+        right: 200px;
+        bottom: 3px;
+      }
+    }
+
+    .theme-controls {
+      position: fixed;
+      right: 20px;
+
+      @media #{$smallUp} {
+        right: 70px;
+      }
+    }
+  
+    .menu {
+      position: fixed;
+      bottom: 0;
+    }
+  }

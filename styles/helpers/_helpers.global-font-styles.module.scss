@@ -1,24 +1,21 @@
-@import '../variables/_variables.color.module';
-@import '../variables/variables.easing.module';
-@import '../mixins/_mixins.font.module';
-@import '../mixins/mixins.links.module';
+@import '../includes.scss';
 
 .styles {
   p, span {
-    @include paragraph('xxs');
+    @include paragraph(xxSmall);
     position: relative;
   }
 
-  p.xs {
-    @include paragraph(xs);
+  p.xSmall {
+    @include paragraph(xSmall);
   }
 
   h2 {
-    @include heading('xs');
+    @include heading(xSmall);
   }
 
   h3 {
-    @include heading('xxs');
+    @include heading(xxSmall);
   }
 
   ol {
@@ -33,7 +30,7 @@
     }
 
     li::before {
-      @include paragraph('xxxs');
+      @include paragraph(xxxSmall);
       margin-right: 8px;
       content: "0" counter(double-digit);
       opacity: .6;
@@ -42,7 +39,7 @@
 
   ul {
     li {
-      @include paragraph(xs);
+      @include paragraph(xSmall);
       margin-bottom: 10px;
     }
   }
