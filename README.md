@@ -74,34 +74,6 @@ Awesome. You don't have to think so hard about whether or not you grabbed all of
 
 As well, let's say that we have switched from the font-family 'Raleway' to 'Times New Roman' with different fallback fonts. If the design token json file is updated to reflect that and the npm package is published with a new version, developers can selectively get the latest version in their own code repo.
 
-## Units - REM & PX
-### Font size
-Make sure to use rem units for font-size only. For accessibility purposes, using rem units enables users who prefer to use browser settings to set the site of fonts to their preferences. If pixel values are used, users lose this capability. While users can choose to zoom in/out, we must make sure font sizes resize accordingly both via browser settings as well as zoom in/out.
-
-To make using rem units much easier for designers and developers, a function `@function rem($pxValue)` is available to use to pass in pixel values and it returns a rem value instead.
-
-e.g. 
-
-```
-html {
-    font-size: 16px;
-}
-
-h1 {
-    font-size: rem(30px);
-}
-```
-
-outputs
-```
-h1 {
-    font-size: 1.875rem;
-}
-```
-
-### Everything else (not font size)
-Use pixel or viewport unit size. Em and rem are poor choices since they resize relative to the user's preferences. Since a user usually does this in order to make text readable, increasing the general spacing takes screen real estate away from text, decreasing readability.
-
 ### Use of Mixins for Design Tokens
 This project makes extensive use of SCSS mixins to apply design tokens, ensuring consistency and flexibility across the codebase. Mixins, such as the font and font-size mixins, are used to access and apply the design tokens defined in the package, including typography, spacing, colors, and breakpoints.
 
@@ -131,3 +103,32 @@ In a future state, this design token package could be enhanced to not only pull 
 In the future, this design token package can be expanded to support not only SCSS variables but also JavaScript, enabling developers to use design tokens in various environments. This could be achieved by integrating tools like Vanilla Extract or other CSS-in-JS solutions, allowing developers to access and apply design tokens in JavaScript, React, and other frameworks without being tied to SCSS.
 
 By supporting both SCSS and JS, the package will offer greater flexibility, allowing developers to choose their preferred styling method while maintaining a consistent design system across different platforms and technologies.
+
+## Accessibility Considerations
+### Units - REM & PX
+#### Font size
+Make sure to use rem units for font-size only. For accessibility purposes, using rem units enables users who prefer to use browser settings to set the site of fonts to their preferences. If pixel values are used, users lose this capability. While users can choose to zoom in/out, we must make sure font sizes resize accordingly both via browser settings as well as zoom in/out.
+
+To make using rem units much easier for designers and developers, a function `@function rem($pxValue)` is available to use to pass in pixel values and it returns a rem value instead.
+
+e.g. 
+
+```
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: rem(30px);
+}
+```
+
+outputs
+```
+h1 {
+    font-size: 1.875rem;
+}
+```
+
+#### Everything else (not font size)
+Use pixel or viewport unit size. Em and rem are poor choices since they resize relative to the user's preferences. Since a user usually does this in order to make text readable, increasing the general spacing takes screen real estate away from text, decreasing readability.
