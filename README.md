@@ -32,9 +32,6 @@ Spacing & Breakpoints: Offers consistent padding, margin, and responsive breakpo
 @include font-size(medium);
 ```
 
-### Future State
-In a future state, this package could be extended to automatically fetch and convert design tokens directly from design tools like Figma. By integrating an API or plugin, the package could pull real-time JSON design tokens from Figma, ensuring that design updates are automatically reflected in the codebase. This would eliminate manual updates, improve cross-team collaboration, and ensure consistency between design and development.
-
 ## Units - REM & PX
 ### Font size
 Make sure to use rem units for font-size only. For accessibility purposes, using rem units enables users who prefer to use browser settings to set the site of fonts to their preferences. If pixel values are used, users lose this capability. While users can choose to zoom in/out, we must make sure font sizes resize accordingly both via browser settings as well as zoom in/out.
@@ -63,3 +60,32 @@ h1 {
 ### Everything else (not font size)
 Use pixel or viewport unit size. Em and rem are poor choices since they resize relative to the user's preferences. Since a user usually does this in order to make text readable, increasing the general spacing takes screen real estate away from text, decreasing readability.
 
+### Use of Mixins for Design Tokens
+This project makes extensive use of SCSS mixins to apply design tokens, ensuring consistency and flexibility across the codebase. Mixins, such as the font and font-size mixins, are used to access and apply the design tokens defined in the package, including typography, spacing, colors, and breakpoints.
+
+For example, the font mixin allows you to easily set the font family and weight based on the design tokens:
+
+```
+@include font(bold);
+```
+
+Similarly, the font-size mixin enables the application of responsive font sizes and line heights that are mapped directly to the token values:
+
+```
+@include font-size(medium);
+```
+
+### Benefits of Using Mixins:
+* **Consistency:** By using design tokens and mixins throughout the project, the same styles are applied consistently across components, which improves the overall coherence of the design.
+* **Maintainability:** If a design change occurs (e.g., a new font size or weight is added), you can update the design tokens in one place, and the mixins will automatically apply the changes throughout the project.
+* **Scalability:** Mixins make it easy to scale styles across different components and screen sizes, with minimal effort. They also simplify the application of complex styles like responsive typography or spacing.
+* **DRY Principle:** Mixins help to keep the code DRY by centralizing the logic and ensuring you don’t need to manually repeat the same CSS properties across components.
+
+### Future State
+#### Figma integration & Visual Regression Tests
+In a future state, this design token package could be enhanced to not only pull design tokens directly from tools like Figma via an API but also to automate visual regression testing. By integrating tools like Storybook for component development and visual regression testing tools, we could ensure that any changes to the design tokens are visually verified before they are deployed.
+
+#### Javascript Support
+In the future, this design token package can be expanded to support not only SCSS variables but also JavaScript, enabling developers to use design tokens in various environments. This could be achieved by integrating tools like Vanilla Extract or other CSS-in-JS solutions, allowing developers to access and apply design tokens in JavaScript, React, and other frameworks without being tied to SCSS.
+
+By supporting both SCSS and JS, the package will offer greater flexibility, allowing developers to choose their preferred styling method while maintaining a consistent design system across different platforms and technologies.
