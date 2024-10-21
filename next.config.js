@@ -1,4 +1,4 @@
-const isGithubActions = process.env.GITHUB_ACTIONS || false
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
 
 let assetPrefix = '';
 let basePath = '';
@@ -19,6 +19,7 @@ module.exports = {
   },
   images: {
     loader: 'imgix',
-    path: 'https://developdayo.imgix.net'
+    path: 'https://developdayo.imgix.net',
   },
-}
+  output: 'export',
+};
