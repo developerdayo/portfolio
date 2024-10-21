@@ -27,7 +27,7 @@ Current Features:
 * For colors: map-get($colors, text, primary)
 
 4. Use prebuilt mixins to apply typography, font sizes, and responsive layouts:
-For example, let's our token json file contains these rules:
+For example, let's say our design tokens json file contains these rules:
 ```
 {
   "typography": {
@@ -72,7 +72,7 @@ h3 {
 
 Awesome. You don't have to think so hard about whether or not you grabbed all of the correct properties from designs as all of the rules determined by the design have been setup already.
 
-As well, let's say that we havee switched from the font-family 'Raleway' to 'Times New Roman' with different fallback fonts. If the design token json file is updated to reflect that and the npm package is pushed with a new version, developers can selectively get the latest version in their own code repo.
+As well, let's say that we have switched from the font-family 'Raleway' to 'Times New Roman' with different fallback fonts. If the design token json file is updated to reflect that and the npm package is published with a new version, developers can selectively get the latest version in their own code repo.
 
 ## Units - REM & PX
 ### Font size
