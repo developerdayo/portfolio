@@ -1,7 +1,5 @@
 import { useRef, useCallback } from 'react'
 
-import { useDebounceCallback } from '@hooks/index'
-
 import cursorCss from '@styles/components/Cursor.module.scss'
 
 const spotlightSize = 'transparent 2%, rgba(0, 0, 0, .3) 100%';
@@ -17,15 +15,13 @@ const Cursor = () => {
     }
   }, [])
 
-  const debouncedUpdate = useDebounceCallback(updateSpotlight, 100)
-
   return (
     <div
       ref={ spotlight }
       className={ cursorCss.spotlight }
-      onMouseMove={ debouncedUpdate }
-      onMouseDown={ debouncedUpdate }
-      onMouseUp={ debouncedUpdate }
+      onMouseMove={ updateSpotlight }
+      onMouseDown={ updateSpotlight }
+      onMouseUp={ updateSpotlight }
     />
   )
 }

@@ -22,10 +22,6 @@ type Props = {
   children: JSX.Element
 };
 
-const RenderCursor = () => {
-  useIsHomePage() && <Cursor />
-}
-
 const menuItems = [
   {
     href: '/about-me' as RelativePath,
@@ -60,7 +56,7 @@ export default function GlobalLayout({ children }: Props) {
     setTimeout(() => {
       router.push(linkPath)
     }, 450)
-  }, [])
+  }, [router])
   
   return (
     <>
@@ -95,7 +91,7 @@ export default function GlobalLayout({ children }: Props) {
       </header>
 
       { children }
-      { RenderCursor() }
+      { useIsHomePage() && <Cursor /> }
       
       <style jsx global>{`
         #__next, main {

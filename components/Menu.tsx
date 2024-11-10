@@ -19,11 +19,12 @@ const Menu = ({
   items,
   renderItem,
 }: MenuProps) => {
+  const isHomePage = useIsHomePage()
 
   return (
-    <div className={ clsx(menuCss.box, useIsHomePage() ? menuCss['home'] : menuCss['interior']) }>
+    <div className={ clsx(menuCss.box, isHomePage ? menuCss['home'] : menuCss['interior']) }>
       <nav aria-label="Main Navigation" className={ menuCss.menu }>
-        <ol className={ useIsHomePage() ? menuCss.home : menuCss.interior }>
+        <ol className={ isHomePage ? menuCss.home : menuCss.interior }>
           {items.map((item, index) =>
             renderItem ? renderItem(item, index) : <MenuItem key={ index } { ...item } />
           )}
