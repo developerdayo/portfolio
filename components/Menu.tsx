@@ -1,34 +1,36 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import Toggle from './Toggle';
+import clsx from 'clsx';
 
-// styles
-import styles from '../styles/components/Menu.module.scss';
+import type { MenuItemProps } from '@props/index';
 
-const Menu = () => {
-  const router = useRouter();
+import useIsHomePage from '@hooks/useIsHomePage';
 
-  const handleClick = (linkPath: string, e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault();
-    setTimeout(() => {
-      router.push(linkPath);
-    }, 450);
-  }
+import MenuItem from '@components/MenuItem'
+
+import menuCss from '@styles/components/Menu.module.scss'
+
+type MenuProps = {
+  children: React.ReactNode
+  items: MenuItemProps[]
+  renderItem?: (item: MenuItemProps, index: number) => React.ReactNode
+}
+
+const Menu = ({
+  children,
+  items,
+  renderItem,
+}: MenuProps) => {
 
   return (
-    <nav aria-labelledby="navMenuLabel" className={styles.menu}>
-      <ol className={router.pathname === '/' ? `${styles.home}` : `${styles.interior}` }>
-        <li><Link onClick={(e) => handleClick('/about-me', e)} href="/about-me">about me</Link></li>
-        <li><Link onClick={(e) => handleClick('/resume', e)} href="/resume">resume</Link></li>
-        <li><Link onClick={(e) => handleClick('mailto:sarah.an.ferguson@gmail.com', e)} href="mailto:sarah.an.ferguson@gmail.com">contact</Link></li>
-        <li className={styles.linkedin}>
-          <Link href="https://www.linkedin.com/in/sarah-ferguson-22167016/" target="_blank">linkedin</Link>
-        </li>
-        <li className={styles['theme-controls']}>
-          <Toggle selectors={styles['light-mode']} text="light" /> | <Toggle selectors={styles['dark-mode']} text="dark" />
-        </li>
-      </ol>
-    </nav>
+    <div className={ clsx(menuCss.box, useIsHomePage() ? menuCss['home'] : menuCss['interior']) }>
+      <nav aria-label="Main Navigation" className={ menuCss.menu }>
+        <ol className={ useIsHomePage() ? menuCss.home : menuCss.interior }>
+          {items.map((item, index) =>
+            renderItem ? renderItem(item, index) : <MenuItem key={ index } { ...item } />
+          )}
+          { children }
+        </ol>
+      </nav>
+    </div>
   );
 }
 

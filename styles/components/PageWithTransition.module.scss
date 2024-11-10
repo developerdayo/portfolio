@@ -42,6 +42,11 @@
   }
 }
 
+.animate-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .animate-page-enter {
   @include container;
   opacity: 1;

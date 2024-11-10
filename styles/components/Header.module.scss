@@ -1,28 +1,7 @@
 @import '../includes';
 
 .box {
-  position: relative;
-  width: 100%;
-  padding: map-get($spacing, medium);
-  align-items: center;
-  background-color: var(--color-background-translucent);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  transition: background-color var(--timing-background) ease-in-out;
-  z-index: var(--z-index-background-0);
-
-  @media #{$smallUp} {
-    width: 50vw;
-  }
-
-  @media #{$mediumUp} {
-    width: 30vw;
-  }
-
-  > * {
-    width: 100%;
-  }
+  @include containerDecorator;
 
   a {
     @include font-size(xxSmall);

@@ -11,9 +11,9 @@ if (isGithubActions) {
   basePath = `/${repo}`;
 }
 
-module.exports = {
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+export default {
+  assetPrefix,
+  basePath,
   eslint: {
     dirs: ['pages', 'utils'],
   },

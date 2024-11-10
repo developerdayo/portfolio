@@ -1,18 +1,16 @@
-import { ThemeProvider } from 'next-themes';
-import type { AppProps } from "next/app";
+import { ThemeProvider } from 'next-themes'
+import type { AppProps } from 'next/app'
 
-// components
-import PageWithTransition from '../components/PageWithTransition';
+import PageWithTransition from '@components/PageWithTransition'
 
-// styles
-import colors from '../styles/variables/_variables.color.module.scss';
+import colorsCss from '@styles/variables/_variables.color.module.scss'
 
-function MyApp( pageProps: AppProps) {
+function MyApp(props: AppProps) {
   return (
     <>
       <ThemeProvider>
-        <PageWithTransition {...pageProps} />
-        <div className="bg"></div>
+        <PageWithTransition {...props} />
+        <div className="bg" />
       </ThemeProvider>
       <style jsx global>{`
         :root {
@@ -30,31 +28,31 @@ function MyApp( pageProps: AppProps) {
         }
 
         :root[data-theme="dark"] {
-          --color-border-primary: ${colors['offBlack']};
-          --color-text-primary: ${colors['gray']};
-          --color-nav-text-primary: ${colors['white']};
-          --color-background: ${colors['offBlack']};
+          --color-border-primary: ${colorsCss['offBlack']};
+          --color-text-primary: ${colorsCss['gray']};
+          --color-nav-text-primary: ${colorsCss['white']};
+          --color-background: ${colorsCss['offBlack']};
           --color-background-translucent: rgb(34, 35, 35, .95);
-          --color-hr: ${colors['lightGray']};
-          --color-theme-interior-text: '${colors['white']}';
-          --color-link-style-background: ${colors['gray']};
-          --color-link-style-background-hov: ${colors['gray']};
-          --color-link-style-text: ${colors['lightGray']};
-          --color-link-style-text-hov: ${colors['darkTeal']};
+          --color-hr: ${colorsCss['lightGray']};
+          --color-theme-interior-text: '${colorsCss['white']}';
+          --color-link-style-background: ${colorsCss['gray']};
+          --color-link-style-background-hov: ${colorsCss['gray']};
+          --color-link-style-text: ${colorsCss['lightGray']};
+          --color-link-style-text-hov: ${colorsCss['darkTeal']};
         }
 
         :root[data-theme="light"] {
-          --color-border-primary: ${colors['white']};
-          --color-text-primary: ${colors['offBlack']};
-          --color-nav-text-primary: ${colors['lightGray']};
-          --color-background: ${colors['white']};
+          --color-border-primary: ${colorsCss['white']};
+          --color-text-primary: ${colorsCss['offBlack']};
+          --color-nav-text-primary: ${colorsCss['lightGray']};
+          --color-background: ${colorsCss['white']};
           --color-background-translucent: rgb(255, 255, 255, .95);
-          --color-theme-interior-text: ${colors['offBlack']};
-          --color-hr: ${colors['darkTeal']};
-          --color-link-style-background: ${colors['gray']};
-          --color-link-style-background-hov: ${colors['darkTeal']};
-          --color-link-style-text: ${colors['darkTeal']};
-          --color-link-style-text-hov: ${colors['lightGray']};
+          --color-theme-interior-text: ${colorsCss['offBlack']};
+          --color-hr: ${colorsCss['darkTeal']};
+          --color-link-style-background: ${colorsCss['gray']};
+          --color-link-style-background-hov: ${colorsCss['darkTeal']};
+          --color-link-style-text: ${colorsCss['darkTeal']};
+          --color-link-style-text-hov: ${colorsCss['lightGray']};
         }
 
         html {

@@ -1,5 +1,19 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@constants/*": ["constants/*"],
+      "@data/*": ["data/*"],
+      "@hooks/*": ["hooks/*"],
+      "@pages/*": ["pages/*"],
+      "@props/*": ["props/*"],
+      "@utils/*": ["utils/*"],
+      "@styles/*": ["styles/*"],
+      "@styles/components/*": ["styles/components/*"],
+      "@styles/helpers/*": ["styles/helpers/*"],
+      "@styles/pages*": ["styles/pages/*"],
+    },
     "lib": [
       "dom",
       "dom.iterable",

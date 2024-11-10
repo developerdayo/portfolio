@@ -2,6 +2,38 @@
 @import 'Menu/MenuHome.module.scss';
 @import 'Menu/MenuInterior.module.scss';
 
+.box {
+  @include containerDecorator;
+
+  a {
+    @include font-size(xxSmall);
+    @include underline;
+  }
+
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: double-digit;
+  
+    li {
+      margin-bottom: 8px;
+      counter-increment: double-digit;
+    }
+  
+    li::before {
+      @include paragraph(xxxSmall);
+      margin-right: 8px;
+      content: "0" counter(double-digit);
+      opacity: .6;
+    }
+  }
+  &--interior {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
 .dark-mode {
   &:disabled::after {
     @include flashlight-off;
@@ -11,6 +43,11 @@
     @media (hover: hover) {
       @include flashlight-off;
     }
+  }
+
+  &::before {
+    padding: 0 5px;
+    content: ' | ';
   }
 }
 
