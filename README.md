@@ -4,6 +4,25 @@ Sarah Ferguson
 
 Software Developer | NYC
 
+# Demo 2 Overview
+Demo 2 is essentially a complete refactor of the application.
+
+## Preface
+* I introduced a little UI bug on mobile for interior pages but I understand application design and development is the main interest of the audience and decided to defer the fix to outside of this exercise.
+
+* I time capped the work of this demo to this weekend. Paired with the fact that this was a massive refactor, I had limited time to review the application as many times as I would've liked to. There are probably some more opportunities to enhance the application but I decided to focus on parts that I thought made the most impact. Because of time constraints, I also did no further work on the first demo focusing on design tokens.
+
+## Purpose:
+The purpose of this demo is to showcase
+* Component Architecture
+* Strict Typing with TypeScript
+* Global Type and Constants Organization
+* Custom Hooks
+* Advanced Component Design
+* State and Event Management
+* Application Organization
+
+
 # Demo Overview
 In this demo, I address common cross-team and inter-team challenges that I've encountered in various projects. The focus is on streamlining workflows, reducing manual errors, and automating processes that can save time and improve project consistency. Specifically, I will demonstrate how to:
 
