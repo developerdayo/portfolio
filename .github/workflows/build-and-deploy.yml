@@ -17,9 +17,6 @@ jobs:
          node-version: 20
          cache: npm
 
-      - name: Authenticate with npm
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.DESIGN_TOKENS_NPM_TOKEN }}" > ~/.npmrc
-
       - name: Build
         run: |
           npm ci

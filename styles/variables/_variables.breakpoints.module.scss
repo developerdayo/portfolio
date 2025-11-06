@@ -1,6 +1,6 @@
 @use "sass:map";
 @import '../functions/functions.ranges';
-@import 'node_modules/@sferguson9670/portfolio-design-tokens/dist/design-tokens.scss';
+@import 'tokens';
 
 $xSmallRange: (0, map-get($breakpoints, widths, xSmall)) !default;
 $smallRange: (map-get($breakpoints, widths, small) + 1, map-get($breakpoints, widths, small)) !default;

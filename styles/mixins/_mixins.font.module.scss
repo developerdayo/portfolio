@@ -1,5 +1,5 @@
 @use "sass:map";
-@import '~@sferguson9670/portfolio-design-tokens/dist/design-tokens.scss';
+@import '../variables/tokens';
 
 @function stripUnit($value) {
   @return $value / ($value * 0 + 1);
