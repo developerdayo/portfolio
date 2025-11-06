@@ -1,8 +1,19 @@
 [
+  "Contentful",
   "Adobe Experience Manager",
   "DotNetNuke",
   "Drupal",
   "Shopify",
   "Sitecore",
-  "Wordpress"
+  "Wordpress",
+  "Design Systems Architecture",
+  "Component Libraries",
+  "Web Accessibility (WCAG 2.1, Section 508)",
+  "Material-UI",
+  "Web Components",
+  "Shoelace",
+  "Bootstrap",
+  "Shopify Liquid",
+  "Twig",
+  "Figma"
 ]

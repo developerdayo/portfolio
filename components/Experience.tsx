@@ -5,7 +5,7 @@ type ExperienceItemsProps = {
   startDate: string
   endDate: string
   descriptionTitle: string
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
 export default function Experience({
